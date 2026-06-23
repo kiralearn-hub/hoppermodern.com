@@ -71,7 +71,7 @@ export default function Home() {
               <Reveal>
                 <p className="kf-overline mb-8 flex items-center gap-3">
                   <span className="kf-dot" />
-                  KIRAFIX™ // ENTERPRISE PERFORMANCE TURNAROUND
+                  KIRAFIX AI™ // BUSINESS UNIT PERFORMANCE TURNAROUND
                 </p>
               </Reveal>
               <Reveal delay={0.06}>
@@ -98,7 +98,15 @@ export default function Home() {
               </Reveal>
             </div>
 
-            <div className="lg:col-span-3 hidden lg:block">
+            <div className="lg:col-span-3 hidden lg:flex flex-col items-end justify-end gap-4">
+              <Reveal delay={0.3}>
+                <div className="kf-img-frame aspect-[3/4] w-full max-w-[240px] kf-img-grayscale relative">
+                  <img src={SEEMA} alt="Seema Bassi, Founder" />
+                  <div className="absolute bottom-3 left-3 right-3 flex items-center gap-2 bg-[var(--kf-bg)] border border-[var(--kf-ink)] px-2 py-1 text-[9px] uppercase tracking-[0.18em] font-mono-acc text-[var(--kf-ink)]">
+                    <span className="kf-dot" /> Seema Bassi · Top 10 CLO &apos;23
+                  </div>
+                </div>
+              </Reveal>
               <Reveal delay={0.36}>
                 <div className="kf-vertical">
                   v1.0 // INNOVATION · MODERN LEARNING · AI
@@ -133,7 +141,7 @@ export default function Home() {
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 mb-16">
             <div className="lg:col-span-5">
               <Reveal>
-                <p className="kf-overline mb-6">// THE KIRAFIX™ MODEL</p>
+                <p className="kf-overline mb-6">// THE KIRAFIX AI™ FRAMEWORK</p>
               </Reveal>
               <Reveal delay={0.1}>
                 <h2 className="font-serif font-medium text-4xl md:text-6xl leading-[0.98] tracking-[-0.03em] text-[var(--kf-ink)]">

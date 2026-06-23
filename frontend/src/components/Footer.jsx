@@ -32,6 +32,25 @@ export default function Footer() {
       <div className="absolute -top-40 -right-40 w-[600px] h-[600px] rounded-full bg-[var(--kf-orange)] opacity-[0.07] blur-[120px] pointer-events-none" />
 
       <div className="relative max-w-7xl mx-auto px-6 md:px-10 pt-24 pb-12">
+        {/* Brand banner */}
+        <div className="flex flex-col md:flex-row items-start md:items-center gap-6 md:gap-10 pb-14 border-b border-[var(--kf-line)] mb-14">
+          <img
+            src="https://customer-assets.emergentagent.com/job_enterprise-boost-ai/artifacts/xplppvud_newlogo.jpg"
+            alt="Hopper Modern — Biz Learning Solutions"
+            data-testid="footer-hopper-logo"
+            className="w-24 h-24 md:w-28 md:h-28 object-cover rounded-md border border-[var(--kf-line)]"
+          />
+          <div>
+            <p className="kf-overline mb-2">// PARENT BRAND</p>
+            <p className="font-serif text-2xl md:text-3xl font-medium leading-tight tracking-[-0.02em]">
+              Hopper Modern Innovative Learning Solutions
+            </p>
+            <p className="font-mono-acc text-[11px] tracking-[0.16em] uppercase text-[var(--kf-gray)] mt-2">
+              KiraFix AI™ is a flagship framework from Hopper Modern.
+            </p>
+          </div>
+        </div>
+
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 pb-20 border-b border-[var(--kf-line)]">
           <div className="lg:col-span-7">
             <p className="kf-overline mb-6">// LET&apos;S TRANSFORM TOGETHER</p>
