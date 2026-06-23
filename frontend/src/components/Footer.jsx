@@ -80,7 +80,7 @@ export default function Footer() {
             <ul className="space-y-3 text-[var(--kf-ink-soft)] text-sm">
               <li><Link to="/" className="hover:text-[var(--kf-orange)]" data-testid="footer-link-home">Home</Link></li>
               <li><Link to="/about" className="hover:text-[var(--kf-orange)]" data-testid="footer-link-about">About Seema</Link></li>
-              <li><Link to="/kirafix" className="hover:text-[var(--kf-orange)]" data-testid="footer-link-kirafix">KiraFix™ Model</Link></li>
+              <li><Link to="/kirafix" className="hover:text-[var(--kf-orange)]" data-testid="footer-link-kirafix">KiraFix AI™ Model</Link></li>
               <li><Link to="/case-studies" className="hover:text-[var(--kf-orange)]" data-testid="footer-link-cases">Case Studies</Link></li>
               <li><Link to="/contact" className="hover:text-[var(--kf-orange)]" data-testid="footer-link-contact">Contact</Link></li>
             </ul>
@@ -129,7 +129,7 @@ export default function Footer() {
         </div>
 
         <div className="pt-10 border-t border-[var(--kf-line)] flex flex-col md:flex-row justify-between items-start md:items-center gap-4 text-[10px] text-[var(--kf-gray-mid)] font-mono-acc tracking-wider uppercase">
-          <span>© {new Date().getFullYear()} Hopper Modern Innovative Learning Solutions. KiraFix™ is a trademark.</span>
+          <span>© {new Date().getFullYear()} Hopper Modern Innovative Learning Solutions. KiraFix AI™ is a trademark.</span>
           <span>Gurgaon · India · Engagements Delivered Globally</span>
         </div>
       </div>

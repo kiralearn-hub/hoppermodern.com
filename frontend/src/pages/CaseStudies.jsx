@@ -9,7 +9,7 @@ const cases = [
     tag: "BFSI / FORTUNE 500",
     title: "Underperforming frontline → top-quartile CSAT in 9 months.",
     challenge: "A global BFSI leader was burning ₹crores on training with flat customer satisfaction and rising attrition in frontline. CSAT had been underperforming peer benchmarks for 4 quarters.",
-    intervention: "Full KiraFix™ Performance Turnaround — Organisational Gap Analysis, ADDIE-based AI simulation curriculum, manager-cascaded accountability, CEO townhall launch.",
+    intervention: "Full KiraFix AI™ Performance Turnaround — Organisational Gap Analysis, ADDIE-based AI simulation curriculum, manager-cascaded accountability, CEO townhall launch.",
     metrics: [
       { v: "+32%", l: "Customer Satisfaction" },
       { v: "−24%", l: "Frontline Attrition" },
@@ -89,7 +89,7 @@ export default function CaseStudies() {
           </Reveal>
           <Reveal delay={0.18}>
             <p className="mt-10 text-lg md:text-xl font-light text-[var(--kf-gray)] max-w-3xl leading-relaxed">
-              Case briefs from KiraFix™ Performance Turnarounds across BFSI, Telecom and BPO. Client names are kept confidential at our partners&apos; request, but the metrics are not embellished.
+              Case briefs from KiraFix AI™ Performance Turnarounds across BFSI, Telecom and BPO. Client names are kept confidential at our partners&apos; request, but the metrics are not embellished.
             </p>
           </Reveal>
         </div>

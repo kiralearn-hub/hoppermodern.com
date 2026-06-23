@@ -1,47 +1,47 @@
-@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter+Tight:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,300;12..96,400;12..96,500;12..96,600;12..96,700;12..96,800&family=Inter+Tight:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap');
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 :root {
-    /* KiraFix — DEEP ELECTRIC ORANGE background + GRAY contrast */
-    --kf-bg: #FF5722;                /* DEEP ELECTRIC ORANGE — primary surface */
-    --kf-bg-deep: #E64A19;
-    --kf-bg-raised: #1F1F23;         /* dark gray contrast band */
-    --kf-bg-card: #2A2A2F;
-    --kf-ink: #141414;               /* charcoal text on orange */
-    --kf-ink-soft: #2A2A2A;
-    --kf-gray: #404045;              /* medium gray body text on orange */
-    --kf-gray-mid: #58585D;
-    --kf-line: rgba(20, 20, 20, 0.14);
-    --kf-line-strong: rgba(20, 20, 20, 0.32);
-    --kf-orange: #FF5722;
-    --kf-orange-deep: #C2410C;
-    --kf-overline-color: #141414;
-    --kf-pillar-num-color: rgba(20, 20, 20, 0.08);
-    --kf-grid-color: rgba(20, 20, 20, 0.07);
-    --kf-cta-bg: #141414;            /* charcoal CTA on orange */
-    --kf-cta-fg: #FAF7F0;
-    --kf-cta-bg-hover: #2A2A2A;
-    --kf-cream: #FAF7F0;
-    --kf-dark: #1F1F23;
+    /* KiraFix AI — Deep burnt orange + warm gray contrast */
+    --kf-bg: #E64A19;                /* DEEPER electric orange — primary surface */
+    --kf-bg-deep: #C2410C;
+    --kf-bg-raised: #2B2620;         /* WARM dark gray (taupe-black) contrast */
+    --kf-bg-card: #3A322B;           /* warm raised card surface */
+    --kf-ink: #141010;               /* warm near-black */
+    --kf-ink-soft: #2A2420;
+    --kf-gray: #3F332B;              /* warm dark gray body text on orange */
+    --kf-gray-mid: #57473D;
+    --kf-line: rgba(20, 16, 16, 0.16);
+    --kf-line-strong: rgba(20, 16, 16, 0.34);
+    --kf-orange: #E64A19;
+    --kf-orange-deep: #9C2D08;
+    --kf-overline-color: #141010;
+    --kf-pillar-num-color: rgba(20, 16, 16, 0.10);
+    --kf-grid-color: rgba(20, 16, 16, 0.075);
+    --kf-cta-bg: #141010;            /* charcoal CTA on orange */
+    --kf-cta-fg: #F5EFE6;
+    --kf-cta-bg-hover: #2A2420;
+    --kf-cream: #F5EFE6;             /* warm cream */
+    --kf-dark: #2B2620;
 }
 
-/* Dark contrast band — applies inside any .kf-on-dark wrapper */
+/* Dark warm-gray contrast band */
 .kf-on-dark {
-    --kf-ink: #F3F2F0;
-    --kf-ink-soft: #D4D3D0;
-    --kf-gray: #A8A8AE;
-    --kf-gray-mid: #71717A;
-    --kf-line: rgba(243, 242, 240, 0.10);
-    --kf-line-strong: rgba(243, 242, 240, 0.22);
-    --kf-overline-color: #FF5722;
-    --kf-pillar-num-color: rgba(243, 242, 240, 0.05);
-    --kf-grid-color: rgba(243, 242, 240, 0.05);
-    --kf-cta-bg: #FF5722;            /* orange CTA on dark */
-    --kf-cta-fg: #FAF7F0;
-    --kf-cta-bg-hover: #E64A19;
+    --kf-ink: #F5EFE6;               /* warm cream on dark */
+    --kf-ink-soft: #D9CFC2;
+    --kf-gray: #A89E92;              /* warm gray secondary on dark */
+    --kf-gray-mid: #7A6F62;
+    --kf-line: rgba(245, 239, 230, 0.10);
+    --kf-line-strong: rgba(245, 239, 230, 0.22);
+    --kf-overline-color: #E64A19;
+    --kf-pillar-num-color: rgba(245, 239, 230, 0.05);
+    --kf-grid-color: rgba(245, 239, 230, 0.05);
+    --kf-cta-bg: #E64A19;
+    --kf-cta-fg: #F5EFE6;
+    --kf-cta-bg-hover: #FF5722;
     background: var(--kf-bg-raised);
     color: var(--kf-ink);
 }
@@ -61,10 +61,11 @@ body {
     color: var(--kf-orange);
 }
 
-/* Repurposed: display font = Space Grotesk (modern grotesque) */
+/* Repurposed: display font = Bricolage Grotesque (modern + warmer character) */
 .font-serif {
-    font-family: 'Space Grotesk', ui-sans-serif, sans-serif;
+    font-family: 'Bricolage Grotesque', ui-sans-serif, sans-serif;
     letter-spacing: -0.025em;
+    font-variation-settings: 'opsz' 96;
 }
 
 .font-mono-acc {
@@ -229,7 +230,7 @@ body {
 }
 
 .kf-pillar-num {
-    font-family: 'Space Grotesk', sans-serif;
+    font-family: 'Bricolage Grotesque', sans-serif;
     font-weight: 300;
     font-size: clamp(5rem, 12vw, 10rem);
     line-height: 0.85;
@@ -294,8 +295,9 @@ body {
         @apply text-foreground;
     }
     h1, h2, h3, h4 {
-        font-family: 'Space Grotesk', sans-serif;
+        font-family: 'Bricolage Grotesque', sans-serif;
         letter-spacing: -0.025em;
+        font-variation-settings: 'opsz' 96;
     }
 }
 

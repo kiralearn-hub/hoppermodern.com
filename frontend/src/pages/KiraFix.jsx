@@ -38,7 +38,7 @@ const services = [
   },
   {
     title: "Performance Turnaround",
-    body: "End-to-end KiraFix™ engagement for underperforming units. Diagnose. Redesign. Deploy AI-based learning. Cascade accountability. Measure performance lift quarter-on-quarter.",
+    body: "End-to-end KiraFix AI™ engagement for underperforming units. Diagnose. Redesign. Deploy AI-based learning. Cascade accountability. Measure performance lift quarter-on-quarter.",
   },
   {
     title: "AI-Based Modern Learning",
@@ -109,9 +109,9 @@ export default function KiraFix() {
           </Reveal>
           <Reveal delay={0.08}>
             <h1 className="font-serif font-medium text-5xl md:text-7xl lg:text-[7.5rem] leading-[0.95] tracking-[-0.035em] max-w-5xl text-[var(--kf-ink)]">
-              KiraFix<sup className="text-2xl md:text-4xl ml-1 text-[var(--kf-orange)]">™</sup>
+              KiraFix <span className="text-[var(--kf-ink)] opacity-40">AI</span><sup className="text-2xl md:text-4xl ml-1">™</sup>
               <br />
-              <span className="text-[var(--kf-gray)]">Innovation.</span> Modern Learning. <span className="text-[var(--kf-orange)]">AI.</span>
+              <span className="text-[var(--kf-gray)]">Innovation.</span> Modern Learning. <span className="italic">AI.</span>
             </h1>
           </Reveal>
           <Reveal delay={0.18}>
@@ -141,7 +141,7 @@ export default function KiraFix() {
             <div className="lg:col-span-7 lg:pt-6">
               <Reveal delay={0.18}>
                 <p className="text-lg font-light text-[var(--kf-gray)] leading-relaxed">
-                  Most consulting engagements end at deployment. KiraFix™ doesn&apos;t. We measure the performance lift, hand over a self-sustaining L&amp;D operating system, and stay accountable for the CSAT / eSAT numbers long after the kick-off slide deck has gone cold.
+                  Most consulting engagements end at deployment. KiraFix AI™ doesn&apos;t. We measure the performance lift, hand over a self-sustaining L&amp;D operating system, and stay accountable for the CSAT / eSAT numbers long after the kick-off slide deck has gone cold.
                 </p>
               </Reveal>
             </div>
@@ -189,7 +189,7 @@ export default function KiraFix() {
             <div className="lg:col-span-7 lg:pt-6">
               <Reveal delay={0.18}>
                 <p className="text-lg font-light text-[var(--kf-gray)] leading-relaxed">
-                  Pick what you need. We can run the full KiraFix™ Performance Turnaround, or plug into a single capability where the gap is most acute. Every engagement is led personally by Seema and her senior L&amp;D bench.
+                  Pick what you need. We can run the full KiraFix AI™ Performance Turnaround, or plug into a single capability where the gap is most acute. Every engagement is led personally by Seema and her senior L&amp;D bench.
                 </p>
               </Reveal>
             </div>

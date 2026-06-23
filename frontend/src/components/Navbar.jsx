@@ -5,7 +5,7 @@ import { Menu, X, ArrowUpRight } from "lucide-react";
 const links = [
   { to: "/", label: "Home" },
   { to: "/about", label: "About" },
-  { to: "/kirafix", label: "KiraFix™" },
+  { to: "/kirafix", label: "KiraFix AI" },
   { to: "/case-studies", label: "Case Studies" },
   { to: "/contact", label: "Contact" },
 ];
@@ -40,7 +40,7 @@ export default function Navbar() {
             KF
           </div>
           <div className="leading-tight">
-            <div className="font-serif text-[18px] tracking-tight text-[var(--kf-ink)] font-medium">KiraFix<sup className="text-[9px] ml-0.5">™</sup></div>
+            <div className="font-serif text-[18px] tracking-tight text-[var(--kf-ink)] font-medium">KiraFix <span className="text-[var(--kf-ink)] opacity-50">AI</span><sup className="text-[9px] ml-0.5">™</sup></div>
             <div className="text-[9px] font-mono-acc tracking-[0.22em] uppercase text-[var(--kf-gray)]">by Hopper Modern</div>
           </div>
         </Link>

@@ -83,7 +83,7 @@ export default function Home() {
               </Reveal>
               <Reveal delay={0.18}>
                 <p className="mt-10 text-lg md:text-xl font-light leading-relaxed text-[var(--kf-gray)] max-w-2xl">
-                  KiraFix™ is the Performance Turnaround model. Innovation + AI-based Modern Learning + intelligent automation — engineered over three decades inside GE, Aviva, Rio Tinto and HCL, codified for CEOs and CXOs who refuse to keep tolerating low CSAT and low eSAT.
+                  KiraFix AI™ is the Performance Turnaround model. Innovation + AI-based Modern Learning + intelligent automation — engineered over three decades inside GE, Aviva, Rio Tinto and HCL, codified for CEOs and CXOs who refuse to keep tolerating low CSAT and low eSAT.
                 </p>
               </Reveal>
               <Reveal delay={0.28}>
@@ -92,7 +92,7 @@ export default function Home() {
                     Book a Discovery Call <ArrowUpRight size={14} />
                   </Link>
                   <Link to="/kirafix" data-testid="hero-cta-secondary" className="kf-btn-ghost">
-                    The KiraFix™ Model <ArrowRight size={14} />
+                    The KiraFix AI™ Model <ArrowRight size={14} />
                   </Link>
                 </div>
               </Reveal>
@@ -145,7 +145,7 @@ export default function Home() {
             <div className="lg:col-span-7 lg:pt-6">
               <Reveal delay={0.2}>
                 <p className="text-lg font-light text-[var(--kf-gray)] leading-relaxed">
-                  KiraFix™ is the framework Seema Bassi has refined over 25 years of Fortune 500 performance turnarounds. It diagnoses why a unit is underperforming, rebuilds the learning operating system with AI-based methodologies, and embeds intelligence so the CSAT and eSAT lift compounds — not evaporates.
+                  KiraFix AI™ is the framework Seema Bassi has refined over 25 years of Fortune 500 performance turnarounds. It diagnoses why a unit is underperforming, rebuilds the learning operating system with AI-based methodologies, and embeds intelligence so the CSAT and eSAT lift compounds — not evaporates.
                 </p>
               </Reveal>
             </div>
@@ -197,7 +197,7 @@ export default function Home() {
             </Reveal>
             <Reveal delay={0.18}>
               <p className="mt-8 font-serif text-2xl md:text-3xl font-light leading-snug text-[var(--kf-ink)] border-l-2 border-[var(--kf-orange)] pl-6">
-                &ldquo;Performance is the language CEOs speak. KiraFix™ turns underperforming units into high-performing, high-CSAT functions — and keeps them there.&rdquo;
+                &ldquo;Performance is the language CEOs speak. KiraFix AI™ turns underperforming units into high-performing, high-CSAT functions — and keeps them there.&rdquo;
               </p>
             </Reveal>
             <Reveal delay={0.26}>
