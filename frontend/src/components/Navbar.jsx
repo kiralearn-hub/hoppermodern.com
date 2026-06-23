@@ -35,10 +35,7 @@ export default function Navbar() {
     >
       <div className="max-w-7xl mx-auto px-6 md:px-10 flex items-center justify-between h-[68px]">
         <Link to="/" data-testid="nav-brand" className="flex items-center gap-3 group">
-          <div className="relative w-9 h-9 border border-[var(--kf-ink)] flex items-center justify-center font-mono-acc text-[var(--kf-ink)] text-sm font-bold tracking-tight">
-            <span className="absolute top-0 left-0 w-1.5 h-1.5 bg-[var(--kf-ink)]" />
-            KF
-          </div>
+          <span className="sr-only">Home</span>
         </Link>
 
         <nav className="hidden lg:flex items-center gap-8">

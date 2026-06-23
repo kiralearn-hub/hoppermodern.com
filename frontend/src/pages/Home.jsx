@@ -67,16 +67,16 @@ export default function Home() {
 
         <div className="relative max-w-7xl mx-auto px-6 md:px-10 pt-32 md:pt-44 pb-24 md:pb-36">
           <Reveal>
-            <div className="flex items-center gap-4 mb-12">
+            <div className="flex items-center gap-6 md:gap-8 mb-14">
               <img
                 src="https://customer-assets.emergentagent.com/job_enterprise-boost-ai/artifacts/xplppvud_newlogo.jpg"
                 alt="Hopper Modern — Biz Learning Solutions"
                 data-testid="hero-hopper-logo"
-                className="w-16 h-16 md:w-20 md:h-20 object-cover rounded-md border border-[var(--kf-ink)] shadow-[0_8px_24px_-12px_rgba(20,16,16,0.5)]"
+                className="w-32 h-32 md:w-44 md:h-44 object-cover rounded-lg border border-[var(--kf-ink)] shadow-[0_16px_40px_-12px_rgba(20,16,16,0.45)]"
               />
               <div className="leading-tight">
-                <p className="font-mono-acc text-[10px] uppercase tracking-[0.22em] text-[var(--kf-gray)]">// PRESENTED BY</p>
-                <p className="font-serif text-xl md:text-2xl font-medium text-[var(--kf-ink)] tracking-[-0.02em] mt-1">Hopper Modern Innovative Learning Solutions</p>
+                <p className="font-mono-acc text-[11px] uppercase tracking-[0.22em] text-[var(--kf-ink)] opacity-70">// PRESENTED BY</p>
+                <p className="font-serif text-2xl md:text-4xl font-medium text-[var(--kf-ink)] tracking-[-0.025em] mt-2 max-w-xl leading-[1.05]">Hopper Modern Innovative Learning Solutions</p>
               </div>
             </div>
           </Reveal>
