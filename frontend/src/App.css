@@ -1,34 +1,69 @@
-.App-logo {
-    height: 40vmin;
-    pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-    .App-logo {
-        animation: App-logo-spin infinite 20s linear;
-    }
-}
-
-.App-header {
-    background-color: #0f0f10;
+.App {
     min-height: 100vh;
-    display: flex;
-    flex-direction: column;
+    background: var(--kf-bg);
+    color: var(--kf-ink);
+}
+
+/* Custom marquee styling */
+.kf-logo-strip {
+    border-top: 1px solid var(--kf-line);
+    border-bottom: 1px solid var(--kf-line);
+}
+
+.kf-logo-strip-item {
+    display: inline-flex;
     align-items: center;
-    justify-content: center;
-    font-size: calc(10px + 2vmin);
-    color: white;
+    gap: 12px;
+    padding: 0 48px;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.75rem;
+    font-weight: 400;
+    color: var(--kf-gray);
+    letter-spacing: 0.02em;
+    white-space: nowrap;
 }
 
-.App-link {
-    color: #61dafb;
+.kf-logo-strip-dot {
+    width: 6px;
+    height: 6px;
+    background: var(--kf-orange);
+    border-radius: 999px;
 }
 
-@keyframes App-logo-spin {
-    from {
-        transform: rotate(0deg);
-    }
-    to {
-        transform: rotate(360deg);
-    }
+/* Hover reveal for images */
+.kf-img-frame {
+    overflow: hidden;
+    background: var(--kf-bg-alt);
+}
+.kf-img-frame img {
+    transition: transform 0.7s cubic-bezier(0.16,1,0.3,1), filter 0.5s ease;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.kf-img-frame:hover img {
+    transform: scale(1.04);
+}
+.kf-img-grayscale img {
+    filter: grayscale(100%);
+}
+.kf-img-grayscale:hover img {
+    filter: grayscale(0%);
+}
+
+/* Drop cap */
+.kf-dropcap::first-letter {
+    font-family: 'Cormorant Garamond', serif;
+    float: left;
+    font-size: 5.25rem;
+    line-height: 0.85;
+    padding-right: 12px;
+    padding-top: 6px;
+    color: var(--kf-orange);
+    font-weight: 500;
+}
+
+/* Custom cursor — orange dot for buttons (subtle) */
+button, a {
+    cursor: pointer;
 }
