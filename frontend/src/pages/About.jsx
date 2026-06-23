@@ -59,7 +59,7 @@ export default function About() {
           <div className="lg:col-span-5">
             <Reveal delay={0.1}>
               <div className="kf-img-frame aspect-[4/5] relative kf-img-grayscale">
-                <img src={SEEMA} alt="Seema Bassi" />
+                <img src={SEEMA} alt="Seema Bassi" style={{ objectPosition: '50% 88%', transform: 'scale(1.18)', transformOrigin: 'center 70%' }} />
               </div>
             </Reveal>
           </div>

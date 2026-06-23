@@ -101,7 +101,7 @@ export default function Home() {
             <div className="lg:col-span-3 hidden lg:flex flex-col items-end justify-end gap-4">
               <Reveal delay={0.3}>
                 <div className="kf-img-frame aspect-[3/4] w-full max-w-[240px] kf-img-grayscale relative">
-                  <img src={SEEMA} alt="Seema Bassi, Founder" />
+                  <img src={SEEMA} alt="Seema Bassi, Founder" style={{ objectPosition: '50% 88%', transform: 'scale(1.18)', transformOrigin: 'center 70%' }} />
                   <div className="absolute bottom-3 left-3 right-3 flex items-center gap-2 bg-[var(--kf-bg)] border border-[var(--kf-ink)] px-2 py-1 text-[9px] uppercase tracking-[0.18em] font-mono-acc text-[var(--kf-ink)]">
                     <span className="kf-dot" /> Seema Bassi · Top 10 CLO &apos;23
                   </div>
@@ -186,7 +186,7 @@ export default function Home() {
           <div className="lg:col-span-5">
             <Reveal>
               <div className="kf-img-frame aspect-[4/5] relative kf-img-grayscale">
-                <img src={SEEMA} alt="Seema Bassi" />
+                <img src={SEEMA} alt="Seema Bassi" style={{ objectPosition: '50% 88%', transform: 'scale(1.18)', transformOrigin: 'center 70%' }} />
                 <div className="absolute top-5 left-5 flex items-center gap-2 bg-[var(--kf-bg)] border border-[var(--kf-ink)] px-3 py-1.5 text-[10px] uppercase tracking-[0.18em] font-mono-acc text-[var(--kf-ink)]">
                   <span className="kf-dot" /> Top 10 CLO &apos;23
                 </div>
