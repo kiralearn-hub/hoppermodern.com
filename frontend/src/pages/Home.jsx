@@ -14,7 +14,7 @@ const pillars = [
     title: "Innovation",
     icon: Activity,
     body:
-      "Diagnose first. Six Sigma, Organisational Gap Analysis and Performance Improvement tools find the real reason your unit is missing CSAT, eSAT and productivity targets — not a training-hours band-aid.",
+      "Diagnose the entire business unit first. Six Sigma, Organisational Gap Analysis and Performance Improvement tools find the real reason the unit is missing CSAT, eSAT, SLA or productivity targets — not a training-hours band-aid.",
   },
   {
     num: "02",
@@ -22,7 +22,7 @@ const pillars = [
     title: "Modern Learning",
     icon: Cpu,
     body:
-      "AI-based learning methodologies replace stale ILT. GenAI-personalised journeys, intelligent tutoring, business simulations, game-based learning and 70:20:10 — engineered on ADDIE, measured by performance lift.",
+      "AI-based methodologies turn capability into a performance lever for the unit. GenAI-personalised journeys, intelligent tutoring, business simulations, game-based learning and 70:20:10 — built on ADDIE, measured by the unit's CSAT, eSAT and productivity lift.",
   },
   {
     num: "03",
@@ -30,7 +30,7 @@ const pillars = [
     title: "AI",
     icon: Brain,
     body:
-      "AI agents inside the learning OS. Skill-gap detection per rep, adaptive content sequencing, real-time coaching nudges and manager dashboards that flag risk before CSAT drops.",
+      "AI inside the business unit performance system. Skill-gap detection per rep, adaptive content sequencing, real-time coaching nudges and manager dashboards that flag risk before CSAT, eSAT or SLA targets drop.",
   },
 ];
 
@@ -47,7 +47,7 @@ const cases = [
     title: "Underperforming frontline → top-quartile CSAT in 9 months.",
     metric: "+32%",
     metricLabel: "Customer Satisfaction",
-    blurb: "Re-engineered the L&D operating model with AI-based learning journeys and ADDIE-driven simulations. Manager-cascaded accountability did the rest.",
+    blurb: "Re-engineered the entire frontline business unit — operating rituals, AI-based learning, ADDIE-driven simulations. Manager-cascaded accountability did the rest.",
   },
   {
     tag: "Telecom / India + APAC",
@@ -76,14 +76,14 @@ export default function Home() {
               </Reveal>
               <Reveal delay={0.06}>
                 <h1 className="font-serif font-medium text-5xl sm:text-6xl md:text-7xl lg:text-[6.5rem] leading-[0.95] tracking-[-0.035em] text-[var(--kf-ink)]">
-                  Turning <span className="text-[var(--kf-orange)]">underperforming</span> units into
+                  Making <span className="text-[var(--kf-ink)] opacity-50">underperforming</span> business units
                   <br />
-                  <span className="text-[var(--kf-gray)]">high-performing,</span> high-CSAT functions.
+                  perform. Measured in CSAT, eSAT &amp; <span className="italic">ROI.</span>
                 </h1>
               </Reveal>
               <Reveal delay={0.18}>
                 <p className="mt-10 text-lg md:text-xl font-light leading-relaxed text-[var(--kf-gray)] max-w-2xl">
-                  KiraFix AI™ is the Performance Turnaround model. Innovation + AI-based Modern Learning + intelligent automation — engineered over three decades inside GE, Aviva, Rio Tinto and HCL, codified for CEOs and CXOs who refuse to keep tolerating low CSAT and low eSAT.
+                  KiraFix AI™ is the Performance Turnaround framework. We make your underperforming business units perform — measured in CSAT, eSAT, productivity and ROI — using Innovation, Modern Learning and AI as the levers. Engineered over three decades inside GE, Aviva, Rio Tinto and HCL.
                 </p>
               </Reveal>
               <Reveal delay={0.28}>
@@ -145,7 +145,7 @@ export default function Home() {
             <div className="lg:col-span-7 lg:pt-6">
               <Reveal delay={0.2}>
                 <p className="text-lg font-light text-[var(--kf-gray)] leading-relaxed">
-                  KiraFix AI™ is the framework Seema Bassi has refined over 25 years of Fortune 500 performance turnarounds. It diagnoses why a unit is underperforming, rebuilds the learning operating system with AI-based methodologies, and embeds intelligence so the CSAT and eSAT lift compounds — not evaporates.
+                  KiraFix AI™ is the framework Seema Bassi has refined over 25 years of Fortune 500 performance turnarounds. It diagnoses why a business unit is underperforming, rebuilds the way it operates with AI-based methodologies, and embeds intelligence so the CSAT, eSAT and productivity lift compounds — not evaporates.
                 </p>
               </Reveal>
             </div>
@@ -196,8 +196,8 @@ export default function Home() {
               <p className="mt-2 text-[var(--kf-gray-mid)] font-mono-acc text-[11px] tracking-[0.18em] uppercase">Founder &amp; Chief Learning Officer · Hopper Modern</p>
             </Reveal>
             <Reveal delay={0.18}>
-              <p className="mt-8 font-serif text-2xl md:text-3xl font-light leading-snug text-[var(--kf-ink)] border-l-2 border-[var(--kf-orange)] pl-6">
-                &ldquo;Performance is the language CEOs speak. KiraFix AI™ turns underperforming units into high-performing, high-CSAT functions — and keeps them there.&rdquo;
+              <p className="mt-8 font-serif text-2xl md:text-3xl font-light leading-snug text-[var(--kf-ink)] border-l-2 border-[var(--kf-ink)] pl-6">
+                &ldquo;Performance is the language CEOs speak. KiraFix AI™ makes underperforming business units perform — measured in CSAT, eSAT and the numbers on the P&amp;L.&rdquo;
               </p>
             </Reveal>
             <Reveal delay={0.26}>

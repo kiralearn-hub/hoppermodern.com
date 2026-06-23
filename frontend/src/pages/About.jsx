@@ -14,7 +14,7 @@ const timeline = [
   { year: "GE · Aviva · Rio Tinto", title: "VP & Learning Leader", body: "Fortune 500 L&D leadership across three global icons. Drove performance turnarounds, modern learning rollouts, change acceleration." },
   { year: "2020", title: "Founded Hopper Modern", body: "Vision: turn underperforming units into high-performing, high-CSAT functions via AI-based modern learning." },
   { year: "2023", title: "Top 10 CLO of the Year", body: "Recognised by CEO Insights for measurable enterprise performance turnarounds." },
-  { year: "2024+", title: "KiraFix AI™ launched", body: "Trademarked the Performance Turnaround methodology — Innovation + AI-based Modern Learning + AI." },
+  { year: "2024+", title: "KiraFix AI™ launched", body: "Trademarked the Performance Turnaround framework — making underperforming business units perform via Innovation, Modern Learning and AI." },
 ];
 
 const credentials = [
@@ -81,12 +81,12 @@ export default function About() {
           </Reveal>
           <Reveal delay={0.16}>
             <p className="kf-dropcap font-serif text-xl md:text-2xl leading-relaxed text-[var(--kf-ink-soft)]">
-              For three decades, Seema has sat across the table from CEOs whose units were underperforming — flat CSAT, low eSAT, missed productivity targets, ballooning attrition. Most had thrown money at training without ever asking the harder question: why isn&apos;t the unit performing? That question is where KiraFix AI™ starts.
+              For three decades, Seema has sat across the table from CEOs whose business units were underperforming — flat CSAT, low eSAT, missed productivity targets, ballooning attrition. Most had thrown money at training without ever asking the harder question: why isn&apos;t the business unit performing? That question is where KiraFix AI™ starts.
             </p>
           </Reveal>
           <Reveal delay={0.22}>
             <p className="mt-8 text-base md:text-lg leading-relaxed text-[var(--kf-gray)]">
-              The KiraFix AI™ playbook — Organisational Gap Analysis on top of Six Sigma rigor, ADDIE-based AI modern learning design, performance lift measurement, Change Acceleration cascades from the CEO down — has now turned around units across Fortune 500 BFSI, BPO and Telecom. <span className="text-[var(--kf-orange)] font-semibold">It&apos;s the same playbook</span> Seema used to launch a new OD strategy at a Fortune 500 BFSI client, migrate 300+ ILT hours to AI-personalised eLearning at HCL, and embed GenAI-driven instructional design in modern workforces today.
+              The KiraFix AI™ framework — Organisational Gap Analysis on top of Six Sigma rigor, AI-based modern learning as a performance lever, real-time CSAT/eSAT/productivity measurement, Change Acceleration cascades from the CEO down — has now turned around entire business units across Fortune 500 BFSI, BPO and Telecom. <span className="text-[var(--kf-orange)] font-semibold">It&apos;s the same playbook</span> Seema used to launch a new OD strategy at a Fortune 500 BFSI client, migrate 300+ ILT hours to AI-personalised eLearning at HCL, and embed GenAI-driven instructional design in modern workforces today.
             </p>
           </Reveal>
           <Reveal delay={0.3}>

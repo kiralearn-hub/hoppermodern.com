@@ -36,7 +36,7 @@ export default function Footer() {
           <div className="lg:col-span-7">
             <p className="kf-overline mb-6">// LET&apos;S TRANSFORM TOGETHER</p>
             <h2 className="font-serif font-medium text-5xl md:text-7xl lg:text-[5.5rem] leading-[0.96] tracking-tight">
-              Turn your <span className="text-[var(--kf-orange)]">underperforming</span> unit into a high-performing, high-CSAT function.
+              Make your <span className="text-[var(--kf-orange)]">underperforming</span> business unit perform.
             </h2>
             <Link
               to="/contact"

@@ -34,7 +34,7 @@ const phases = [
 const services = [
   {
     title: "Fractional CLO",
-    body: "Senior CLO leadership on a 12 to 18-month engagement. We rebuild the L&D function, mentor your senior bench, then exit when the system is operational and the CSAT / eSAT numbers are flowing.",
+    body: "Senior leadership embedded in your underperforming unit on a 12 to 18-month engagement. We rebuild how the business unit performs, mentor your senior bench, then exit when the CSAT / eSAT / productivity numbers are flowing.",
   },
   {
     title: "Performance Turnaround",
@@ -50,7 +50,7 @@ const services = [
   },
   {
     title: "GenAI in Learning",
-    body: "Embed AI agents inside the learning operating system: skill-gap detection, adaptive content sequencing, real-time coaching nudges, manager risk dashboards.",
+    body: "Embed AI inside the business unit's performance system: skill-gap detection, adaptive content sequencing, real-time coaching nudges, manager risk dashboards on CSAT, eSAT, SLAs.",
   },
   {
     title: "Change Acceleration",
@@ -116,7 +116,7 @@ export default function KiraFix() {
           </Reveal>
           <Reveal delay={0.18}>
             <p className="mt-10 text-lg md:text-xl font-light text-[var(--kf-gray)] max-w-3xl leading-relaxed">
-              The trademarked Performance Turnaround model. A four-phase operating system built from 25+ years inside Fortune 500 BFSI, BPO and Telecom turnarounds — and now powered by AI-based learning methodologies.
+              The trademarked Performance Turnaround framework. A four-phase approach built from 25+ years inside Fortune 500 BFSI, BPO and Telecom turnarounds — now powered by AI to make underperforming business units perform.
             </p>
           </Reveal>
         </div>
@@ -141,7 +141,7 @@ export default function KiraFix() {
             <div className="lg:col-span-7 lg:pt-6">
               <Reveal delay={0.18}>
                 <p className="text-lg font-light text-[var(--kf-gray)] leading-relaxed">
-                  Most consulting engagements end at deployment. KiraFix AI™ doesn&apos;t. We measure the performance lift, hand over a self-sustaining L&amp;D operating system, and stay accountable for the CSAT / eSAT numbers long after the kick-off slide deck has gone cold.
+                  Most consulting engagements end at deployment. KiraFix AI™ doesn&apos;t. We measure the business unit&apos;s performance lift, hand it over running self-sufficiently, and stay accountable for the CSAT, eSAT and productivity numbers long after the kick-off slide deck has gone cold.
                 </p>
               </Reveal>
             </div>
@@ -222,7 +222,7 @@ export default function KiraFix() {
             <ul className="space-y-1">
               {[
                 "A measurable lift in CSAT, eSAT and productivity KPIs",
-                "An L&D operating model your team can run independently",
+                "An operating rhythm the business unit can run independently",
                 "AI-based modern learning stack: ADDIE + 70:20:10 + GenAI",
                 "Manager-led accountability rituals that don't die in month three",
                 "Quarterly performance dashboards leadership actually opens",

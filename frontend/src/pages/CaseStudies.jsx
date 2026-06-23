@@ -31,7 +31,7 @@ const cases = [
     tag: "BPO / GLOBAL",
     title: "Underperforming SLAs → high-performing function.",
     challenge: "CEO of a global BPO had written off L&D as overhead. Skill gaps were the real reason behind missed SLA targets in three regions. Three quarters of underperformance.",
-    intervention: "Fractional CLO engagement — rebuilt the L&D operating model, introduced AI-based business simulations and game-based learning, Six Sigma Performance Consulting on top SLAs.",
+    intervention: "Fractional CLO engagement — rebuilt the business unit's operating rhythm, introduced AI-based business simulations and game-based learning, Six Sigma Performance Consulting on top SLAs.",
     metrics: [
       { v: "+18 pts", l: "SLA performance" },
       { v: "2.4×", l: "Internal mobility" },
