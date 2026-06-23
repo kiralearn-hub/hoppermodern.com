@@ -5,7 +5,7 @@ import { Menu, X, ArrowUpRight } from "lucide-react";
 const links = [
   { to: "/", label: "Home" },
   { to: "/about", label: "About" },
-  { to: "/kirafix", label: "KiraFix™ Model" },
+  { to: "/kirafix", label: "KiraFix™" },
   { to: "/case-studies", label: "Case Studies" },
   { to: "/contact", label: "Contact" },
 ];
@@ -30,20 +30,21 @@ export default function Navbar() {
     <header
       data-testid="site-navbar"
       className={`fixed top-0 inset-x-0 z-50 transition-all duration-300 ${
-        scrolled ? "backdrop-blur-xl bg-[rgba(250,250,248,0.82)] border-b border-[var(--kf-line)]" : "bg-transparent"
+        scrolled ? "backdrop-blur-xl bg-[rgba(255,87,34,0.88)] border-b border-[var(--kf-line)]" : "bg-transparent"
       }`}
     >
-      <div className="max-w-7xl mx-auto px-6 md:px-10 flex items-center justify-between h-[72px]">
-        {/* Brand */}
-        <Link to="/" data-testid="nav-brand" className="flex items-center gap-3">
-          <div className="w-9 h-9 rounded-full bg-[var(--kf-orange)] flex items-center justify-center text-white font-serif text-xl leading-none pb-[2px]">K</div>
+      <div className="max-w-7xl mx-auto px-6 md:px-10 flex items-center justify-between h-[68px]">
+        <Link to="/" data-testid="nav-brand" className="flex items-center gap-3 group">
+          <div className="relative w-9 h-9 border border-[var(--kf-ink)] flex items-center justify-center font-mono-acc text-[var(--kf-ink)] text-sm font-bold tracking-tight">
+            <span className="absolute top-0 left-0 w-1.5 h-1.5 bg-[var(--kf-ink)]" />
+            KF
+          </div>
           <div className="leading-tight">
-            <div className="font-serif text-[20px] tracking-tight">KiraFix<sup className="text-[10px] ml-0.5">™</sup></div>
-            <div className="text-[10px] font-mono-acc tracking-[0.22em] uppercase text-[var(--kf-gray)]">by Hopper Modern</div>
+            <div className="font-serif text-[18px] tracking-tight text-[var(--kf-ink)] font-medium">KiraFix<sup className="text-[9px] ml-0.5">™</sup></div>
+            <div className="text-[9px] font-mono-acc tracking-[0.22em] uppercase text-[var(--kf-gray)]">by Hopper Modern</div>
           </div>
         </Link>
 
-        {/* Desktop Links */}
         <nav className="hidden lg:flex items-center gap-8">
           {links.map((l) => (
             <NavLink
@@ -51,7 +52,7 @@ export default function Navbar() {
               to={l.to}
               data-testid={`nav-link-${l.label.toLowerCase().replace(/[^a-z0-9]+/g, "-")}`}
               className={({ isActive }) =>
-                `kf-link text-sm font-medium tracking-wide ${isActive ? "kf-link-active text-[var(--kf-orange)]" : "text-[var(--kf-ink)]"}`
+                `kf-link font-mono-acc text-[11px] uppercase tracking-[0.18em] font-medium ${isActive ? "kf-link-active" : "text-[var(--kf-ink)]"}`
               }
             >
               {l.label}
@@ -59,25 +60,22 @@ export default function Navbar() {
           ))}
         </nav>
 
-        {/* CTA */}
         <div className="hidden lg:flex items-center gap-3">
           <Link to="/contact" data-testid="nav-cta-discovery" className="kf-btn-primary">
-            Book Discovery Call <ArrowUpRight size={16} strokeWidth={2} />
+            Discovery Call <ArrowUpRight size={14} strokeWidth={2} />
           </Link>
         </div>
 
-        {/* Mobile burger */}
         <button
           data-testid="nav-mobile-toggle"
           onClick={() => setOpen((v) => !v)}
           className="lg:hidden p-2 -mr-2 text-[var(--kf-ink)]"
           aria-label="Toggle menu"
         >
-          {open ? <X size={24} /> : <Menu size={24} />}
+          {open ? <X size={22} /> : <Menu size={22} />}
         </button>
       </div>
 
-      {/* Mobile menu */}
       {open && (
         <div data-testid="nav-mobile-menu" className="lg:hidden bg-[var(--kf-bg)] border-t border-[var(--kf-line)]">
           <div className="max-w-7xl mx-auto px-6 py-6 flex flex-col gap-5">
@@ -87,14 +85,14 @@ export default function Navbar() {
                 to={l.to}
                 data-testid={`nav-mobile-link-${l.label.toLowerCase().replace(/[^a-z0-9]+/g, "-")}`}
                 className={({ isActive }) =>
-                  `font-serif text-3xl ${isActive ? "text-[var(--kf-orange)]" : "text-[var(--kf-ink)]"}`
+                  `font-serif text-3xl font-medium ${isActive ? "italic" : "text-[var(--kf-ink)]"}`
                 }
               >
                 {l.label}
               </NavLink>
             ))}
             <Link to="/contact" data-testid="nav-mobile-cta" className="kf-btn-primary mt-2 w-fit">
-              Book Discovery Call <ArrowUpRight size={16} />
+              Discovery Call <ArrowUpRight size={14} />
             </Link>
           </div>
         </div>

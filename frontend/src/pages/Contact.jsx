@@ -11,7 +11,8 @@ const API = `${BACKEND_URL}/api`;
 const inquiryTypes = [
   { value: "discovery_call", label: "Book a Discovery Call" },
   { value: "fractional_clo", label: "Fractional CLO Engagement" },
-  { value: "ld_turnaround", label: "L&D Turnaround" },
+  { value: "performance_turnaround", label: "Performance Turnaround" },
+  { value: "ai_modern_learning", label: "AI-Based Modern Learning" },
   { value: "general", label: "General Enquiry" },
   { value: "media", label: "Press / Media" },
 ];
@@ -36,7 +37,7 @@ export default function Contact() {
     try {
       await axios.post(`${API}/contact`, form);
       setSubmitted(true);
-      toast.success("Thank you. Seema's team will respond within 1 business day.");
+      toast.success("Received. Seema's team will respond within 1 business day.");
     } catch (err) {
       toast.error("Could not send. Please email hello@hoppermodern.com directly.");
     } finally {
@@ -46,40 +47,41 @@ export default function Contact() {
 
   return (
     <PageShell>
-      <section data-testid="contact-hero" className="bg-[var(--kf-bg)]">
-        <div className="max-w-7xl mx-auto px-6 md:px-10 pt-28 md:pt-36 pb-20 md:pb-28 grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16">
-          {/* LEFT — Pitch */}
+      <section data-testid="contact-hero" className="relative overflow-hidden bg-[var(--kf-bg)]">
+        <div className="absolute inset-0 kf-grid-bg opacity-100 pointer-events-none" />
+
+        <div className="relative max-w-7xl mx-auto px-6 md:px-10 pt-32 md:pt-40 pb-20 md:pb-28 grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16">
           <div className="lg:col-span-5">
             <Reveal>
-              <p className="kf-overline mb-6">— Let&apos;s talk</p>
+              <p className="kf-overline mb-8 flex items-center gap-3"><span className="kf-dot" />LET&apos;S TALK</p>
             </Reveal>
             <Reveal delay={0.08}>
-              <h1 className="font-serif font-light text-5xl md:text-6xl lg:text-7xl leading-[0.95] tracking-[-0.02em]">
-                Let&apos;s transform your <em className="not-italic text-[var(--kf-orange)]">organisation.</em>
+              <h1 className="font-serif font-medium text-5xl md:text-6xl lg:text-7xl leading-[0.95] tracking-[-0.035em] text-[var(--kf-ink)]">
+                Transform your <span className="text-[var(--kf-orange)]">underperforming</span> unit.
               </h1>
             </Reveal>
             <Reveal delay={0.18}>
               <p className="mt-8 text-lg font-light text-[var(--kf-gray)] leading-relaxed">
-                Tell us where your L&amp;D function is leaking value. A 30-minute Discovery Call with Seema or a senior partner. No deck. No sales pitch. Just a diagnostic conversation.
+                Tell us where your unit is underperforming — low CSAT, flat eSAT, missed productivity targets. A 30-minute Discovery Call with Seema or a senior partner. No deck. No sales pitch. Just a diagnostic conversation.
               </p>
             </Reveal>
 
             <Reveal delay={0.28}>
-              <div className="mt-12 space-y-5">
+              <div className="mt-12 space-y-4 font-mono-acc text-sm">
                 <div className="flex items-center gap-3 text-[var(--kf-ink-soft)]">
-                  <Mail size={16} className="text-[var(--kf-orange)]" />
+                  <Mail size={14} className="text-[var(--kf-orange)]" />
                   <a href="mailto:hello@hoppermodern.com" className="kf-link" data-testid="contact-email-link">hello@hoppermodern.com</a>
                 </div>
                 <div className="flex items-center gap-3 text-[var(--kf-ink-soft)]">
-                  <Globe size={16} className="text-[var(--kf-orange)]" />
+                  <Globe size={14} className="text-[var(--kf-orange)]" />
                   <a href="https://www.hoppermodern.com" target="_blank" rel="noreferrer" className="kf-link" data-testid="contact-web-link">hoppermodern.com</a>
                 </div>
                 <div className="flex items-center gap-3 text-[var(--kf-ink-soft)]">
-                  <Linkedin size={16} className="text-[var(--kf-orange)]" />
+                  <Linkedin size={14} className="text-[var(--kf-orange)]" />
                   <a href="https://www.linkedin.com/in/seemabassi-hopper" target="_blank" rel="noreferrer" className="kf-link" data-testid="contact-linkedin-link">/in/seemabassi-hopper</a>
                 </div>
                 <div className="flex items-center gap-3 text-[var(--kf-ink-soft)]">
-                  <Instagram size={16} className="text-[var(--kf-orange)]" />
+                  <Instagram size={14} className="text-[var(--kf-orange)]" />
                   <a href="https://instagram.com/Hopper_Learning" target="_blank" rel="noreferrer" className="kf-link" data-testid="contact-instagram-link">@Hopper_Learning</a>
                 </div>
               </div>
@@ -87,20 +89,24 @@ export default function Contact() {
 
             <Reveal delay={0.36}>
               <div className="mt-14 border-t border-[var(--kf-line)] pt-8">
-                <p className="kf-overline mb-3">— Operating</p>
-                <p className="font-serif text-2xl leading-tight">Gurgaon, India · Engagements delivered globally.</p>
+                <p className="kf-overline mb-3">// OPERATING</p>
+                <p className="font-serif text-xl md:text-2xl leading-tight text-[var(--kf-ink)] tracking-[-0.02em]">Gurgaon, India · Engagements delivered globally.</p>
               </div>
             </Reveal>
           </div>
 
-          {/* RIGHT — Form */}
           <div className="lg:col-span-7">
             <Reveal delay={0.1}>
-              <div className="bg-[var(--kf-bg-alt)] p-8 md:p-12 border border-[var(--kf-line)]">
+              <div className="kf-on-dark relative p-8 md:p-12 border border-[var(--kf-line-strong)]">
+                <span className="kf-corner kf-corner-tl" />
+                <span className="kf-corner kf-corner-tr" />
+                <span className="kf-corner kf-corner-bl" />
+                <span className="kf-corner kf-corner-br" />
+
                 {submitted ? (
                   <div data-testid="contact-success" className="py-16 text-center">
                     <CheckCircle2 size={56} strokeWidth={1.25} className="text-[var(--kf-orange)] mx-auto" />
-                    <h2 className="font-serif text-4xl md:text-5xl font-light mt-6 leading-tight">Thank you.</h2>
+                    <h2 className="font-serif text-4xl md:text-5xl font-medium mt-6 leading-tight text-[var(--kf-ink)] tracking-[-0.025em]">Received.</h2>
                     <p className="mt-4 text-[var(--kf-gray)] max-w-md mx-auto leading-relaxed">
                       Your enquiry is in. Seema&apos;s team will respond within 1 business day with available Discovery Call slots.
                     </p>
@@ -117,11 +123,11 @@ export default function Contact() {
                   </div>
                 ) : (
                   <form onSubmit={submit} data-testid="contact-form" className="space-y-1">
-                    <p className="kf-overline mb-6">— Discovery enquiry</p>
+                    <p className="kf-overline mb-6">// DISCOVERY ENQUIRY</p>
 
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-1">
                       <div className="pt-2">
-                        <label className="text-xs uppercase tracking-[0.18em] text-[var(--kf-gray)]">Full name *</label>
+                        <label className="font-mono-acc text-[10px] uppercase tracking-[0.18em] text-[var(--kf-gray)]">Full name *</label>
                         <input
                           data-testid="contact-name-input"
                           className="kf-field"
@@ -132,7 +138,7 @@ export default function Contact() {
                         />
                       </div>
                       <div className="pt-2">
-                        <label className="text-xs uppercase tracking-[0.18em] text-[var(--kf-gray)]">Work email *</label>
+                        <label className="font-mono-acc text-[10px] uppercase tracking-[0.18em] text-[var(--kf-gray)]">Work email *</label>
                         <input
                           data-testid="contact-email-input"
                           type="email"
@@ -144,7 +150,7 @@ export default function Contact() {
                         />
                       </div>
                       <div className="pt-2">
-                        <label className="text-xs uppercase tracking-[0.18em] text-[var(--kf-gray)]">Company</label>
+                        <label className="font-mono-acc text-[10px] uppercase tracking-[0.18em] text-[var(--kf-gray)]">Company</label>
                         <input
                           data-testid="contact-company-input"
                           className="kf-field"
@@ -154,7 +160,7 @@ export default function Contact() {
                         />
                       </div>
                       <div className="pt-2">
-                        <label className="text-xs uppercase tracking-[0.18em] text-[var(--kf-gray)]">Your role</label>
+                        <label className="font-mono-acc text-[10px] uppercase tracking-[0.18em] text-[var(--kf-gray)]">Your role</label>
                         <input
                           data-testid="contact-role-input"
                           className="kf-field"
@@ -166,7 +172,7 @@ export default function Contact() {
                     </div>
 
                     <div className="pt-6">
-                      <label className="text-xs uppercase tracking-[0.18em] text-[var(--kf-gray)]">I&apos;m interested in</label>
+                      <label className="font-mono-acc text-[10px] uppercase tracking-[0.18em] text-[var(--kf-gray)]">I&apos;m interested in</label>
                       <select
                         data-testid="contact-inquiry-type"
                         className="kf-field"
@@ -180,7 +186,7 @@ export default function Contact() {
                     </div>
 
                     <div className="pt-6">
-                      <label className="text-xs uppercase tracking-[0.18em] text-[var(--kf-gray)]">What&apos;s going on in your L&amp;D function? *</label>
+                      <label className="font-mono-acc text-[10px] uppercase tracking-[0.18em] text-[var(--kf-gray)]">What&apos;s going on in your unit? *</label>
                       <textarea
                         data-testid="contact-message-input"
                         required
@@ -188,7 +194,7 @@ export default function Contact() {
                         className="kf-field resize-none"
                         value={form.message}
                         onChange={update("message")}
-                        placeholder="Low eSAT? Low cSAT? L&D function under review? Tell us where to look first."
+                        placeholder="Low CSAT? Low eSAT? Missed productivity targets? Tell us where to look first."
                       />
                     </div>
 
@@ -199,7 +205,7 @@ export default function Contact() {
                         disabled={loading}
                         className="kf-btn-primary"
                       >
-                        {loading ? "Sending..." : (<>Send enquiry <ArrowUpRight size={16} /></>)}
+                        {loading ? "Sending..." : (<>Send enquiry <ArrowUpRight size={14} /></>)}
                       </button>
                       <p className="text-xs text-[var(--kf-gray)] max-w-xs">
                         By submitting, you agree to be contacted by Hopper Modern. No spam — ever.

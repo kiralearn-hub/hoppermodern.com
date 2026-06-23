@@ -1,34 +1,36 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { ArrowUpRight, ArrowRight, Sparkles, Brain, Lightbulb } from "lucide-react";
+import { ArrowUpRight, ArrowRight, Cpu, Brain, Activity } from "lucide-react";
 import PageShell from "../components/PageShell";
 import CredibilityMarquee from "../components/CredibilityMarquee";
 import { Reveal, StaggerGroup, StaggerItem } from "../components/Reveal";
 
 const SEEMA = "https://customer-assets.emergentagent.com/job_enterprise-boost-ai/artifacts/t3634s6x_SeemaBassi.jpeg";
-const HERO_BG = "https://images.unsplash.com/photo-1517048676732-d65bc937f952?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzMzl8MHwxfHNlYXJjaHwxfHxleGVjdXRpdmUlMjBsZWFkZXJzaGlwJTIwbWVldGluZ3xlbnwwfHx8fDE3ODIyNDIzMjZ8MA&ixlib=rb-4.1.0&q=85";
 
 const pillars = [
   {
     num: "01",
+    code: "PILLAR.INNOVATION",
     title: "Innovation",
-    icon: Lightbulb,
+    icon: Activity,
     body:
-      "We don't 'check the box' on training hours. We use Six Sigma, Gap Analysis, and Organizational Diagnostics to solve the actual business problem behind your eSAT and cSAT decline.",
+      "Diagnose first. Six Sigma, Organisational Gap Analysis and Performance Improvement tools find the real reason your unit is missing CSAT, eSAT and productivity targets — not a training-hours band-aid.",
   },
   {
     num: "02",
+    code: "PILLAR.MODERN_LEARNING",
     title: "Modern Learning",
-    icon: Sparkles,
+    icon: Cpu,
     body:
-      "Shift your workforce from instructor-led inertia to engaging eLearning, game-based learning, and the 70:20:10 model. Built on the ADDIE framework, measured by Learning ROI.",
+      "AI-based learning methodologies replace stale ILT. GenAI-personalised journeys, intelligent tutoring, business simulations, game-based learning and 70:20:10 — engineered on ADDIE, measured by performance lift.",
   },
   {
     num: "03",
+    code: "PILLAR.AI",
     title: "AI",
     icon: Brain,
     body:
-      "GenAI-driven instructional design, intelligent learning paths, and AI workplace masterclasses. Modern learners deserve modern infrastructure — and so do your CEOs.",
+      "AI agents inside the learning OS. Skill-gap detection per rep, adaptive content sequencing, real-time coaching nudges and manager dashboards that flag risk before CSAT drops.",
   },
 ];
 
@@ -36,23 +38,23 @@ const stats = [
   { value: "30+", label: "Years global L&D leadership" },
   { value: "25+", label: "Fortune 500 transformations" },
   { value: "Top 10", label: "CLO of 2023" },
-  { value: "5 cost centers", label: "Scaled at HCL alone" },
+  { value: "5×", label: "Cost centers scaled at HCL" },
 ];
 
 const cases = [
   {
-    tag: "BFSI · Fortune 500",
-    title: "From low cSAT to top-quartile in 9 months.",
+    tag: "BFSI / Fortune 500",
+    title: "Underperforming frontline → top-quartile CSAT in 9 months.",
     metric: "+32%",
     metricLabel: "Customer Satisfaction",
-    blurb: "Re-engineered the L&D operating model, rolled out a competency-based simulation curriculum, and embedded measurement into every learning intervention.",
+    blurb: "Re-engineered the L&D operating model with AI-based learning journeys and ADDIE-driven simulations. Manager-cascaded accountability did the rest.",
   },
   {
-    tag: "Telecom · India + APAC",
-    title: "Employee engagement reborn through modern learning.",
+    tag: "Telecom / India + APAC",
+    title: "Disengaged unit reborn through AI-led learning.",
     metric: "+41%",
     metricLabel: "Employee eSAT",
-    blurb: "Replaced 300+ hours of legacy ILT with bite-sized, GenAI-personalised journeys. Manager accountability driven by townhall cascades from the CEO.",
+    blurb: "Replaced 300+ hours of legacy ILT with GenAI-personalised journeys. Real-time skill diagnostics. Manager 90-day reviews tied to the CEO scorecard.",
   },
 ];
 
@@ -60,52 +62,46 @@ export default function Home() {
   return (
     <PageShell>
       {/* HERO */}
-      <section
-        data-testid="home-hero"
-        className="relative overflow-hidden bg-[var(--kf-bg)]"
-      >
-        <div className="absolute inset-0 -z-0">
-          <div className="absolute inset-0 bg-gradient-to-b from-[var(--kf-bg)] via-[var(--kf-bg)]/85 to-[var(--kf-bg)]" />
-          <img
-            src={HERO_BG}
-            alt=""
-            className="w-full h-full object-cover opacity-[0.13]"
-          />
-        </div>
+      <section data-testid="home-hero" className="relative overflow-hidden bg-[var(--kf-bg)]">
+        <div className="absolute inset-0 kf-grid-bg opacity-100 pointer-events-none" />
 
-        <div className="relative max-w-7xl mx-auto px-6 md:px-10 pt-28 md:pt-40 pb-24 md:pb-32">
+        <div className="relative max-w-7xl mx-auto px-6 md:px-10 pt-32 md:pt-44 pb-24 md:pb-36">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-end">
             <div className="lg:col-span-9">
               <Reveal>
-                <p className="kf-overline mb-8">— KiraFix™ · Enterprise Performance Turnaround</p>
+                <p className="kf-overline mb-8 flex items-center gap-3">
+                  <span className="kf-dot" />
+                  KIRAFIX™ // ENTERPRISE PERFORMANCE TURNAROUND
+                </p>
               </Reveal>
-              <Reveal delay={0.05}>
-                <h1 className="font-serif font-light text-5xl sm:text-6xl md:text-7xl lg:text-[7.5rem] leading-[0.92] tracking-[-0.02em] text-[var(--kf-ink)]">
-                  Transforming <em className="not-italic text-[var(--kf-orange)]">underperforming</em> enterprises into{" "}
-                  <span className="italic font-normal">high-performing</span> ones.
+              <Reveal delay={0.06}>
+                <h1 className="font-serif font-medium text-5xl sm:text-6xl md:text-7xl lg:text-[6.5rem] leading-[0.95] tracking-[-0.035em] text-[var(--kf-ink)]">
+                  Turning <span className="text-[var(--kf-orange)]">underperforming</span> units into
+                  <br />
+                  <span className="text-[var(--kf-gray)]">high-performing,</span> high-CSAT functions.
                 </h1>
               </Reveal>
               <Reveal delay={0.18}>
                 <p className="mt-10 text-lg md:text-xl font-light leading-relaxed text-[var(--kf-gray)] max-w-2xl">
-                  Built on three decades inside GE, Aviva, Rio Tinto and HCL. Powered by Innovation, Modern Learning &amp; AI. Designed for CEOs who refuse to accept a low-impact L&amp;D function.
+                  KiraFix™ is the Performance Turnaround model. Innovation + AI-based Modern Learning + intelligent automation — engineered over three decades inside GE, Aviva, Rio Tinto and HCL, codified for CEOs and CXOs who refuse to keep tolerating low CSAT and low eSAT.
                 </p>
               </Reveal>
               <Reveal delay={0.28}>
                 <div className="mt-12 flex flex-wrap items-center gap-4">
                   <Link to="/contact" data-testid="hero-cta-primary" className="kf-btn-primary">
-                    Book a Discovery Call <ArrowUpRight size={16} />
+                    Book a Discovery Call <ArrowUpRight size={14} />
                   </Link>
                   <Link to="/kirafix" data-testid="hero-cta-secondary" className="kf-btn-ghost">
-                    Explore the KiraFix™ Model <ArrowRight size={16} />
+                    The KiraFix™ Model <ArrowRight size={14} />
                   </Link>
                 </div>
               </Reveal>
             </div>
 
             <div className="lg:col-span-3 hidden lg:block">
-              <Reveal delay={0.35}>
+              <Reveal delay={0.36}>
                 <div className="kf-vertical">
-                  Innovation · Modern Learning · AI
+                  v1.0 // INNOVATION · MODERN LEARNING · AI
                 </div>
               </Reveal>
             </div>
@@ -121,48 +117,53 @@ export default function Home() {
           {stats.map((s, i) => (
             <Reveal delay={i * 0.05} key={s.label}>
               <div className="border-t border-[var(--kf-line-strong)] pt-5">
-                <div className="font-serif font-light text-5xl md:text-6xl text-[var(--kf-ink)] tracking-tight leading-none">{s.value}</div>
-                <div className="mt-3 text-sm text-[var(--kf-gray)] max-w-[180px]">{s.label}</div>
+                <div className="font-serif font-medium text-5xl md:text-6xl text-[var(--kf-ink)] tracking-[-0.04em] leading-none">{s.value}</div>
+                <div className="mt-3 text-xs uppercase tracking-[0.14em] text-[var(--kf-gray)] max-w-[200px] font-mono-acc">{s.label}</div>
               </div>
             </Reveal>
           ))}
         </div>
       </section>
 
-      {/* KIRAFIX PILLARS */}
-      <section data-testid="home-pillars" className="bg-[var(--kf-bg-alt)] kf-grain">
+      {/* PILLARS */}
+      <section data-testid="home-pillars" className="kf-on-dark relative overflow-hidden">
+        <div className="absolute inset-0 kf-grid-bg opacity-100 pointer-events-none" />
+        <div className="absolute -top-32 -left-32 w-[600px] h-[600px] rounded-full bg-[var(--kf-orange)] opacity-[0.10] blur-[140px] pointer-events-none" />
         <div className="relative max-w-7xl mx-auto px-6 md:px-10 py-24 md:py-36">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 mb-16">
             <div className="lg:col-span-5">
               <Reveal>
-                <p className="kf-overline mb-6">— The KiraFix™ Model</p>
+                <p className="kf-overline mb-6">// THE KIRAFIX™ MODEL</p>
               </Reveal>
               <Reveal delay={0.1}>
-                <h2 className="font-serif font-light text-4xl md:text-6xl leading-[0.98] tracking-tight">
+                <h2 className="font-serif font-medium text-4xl md:text-6xl leading-[0.98] tracking-[-0.03em] text-[var(--kf-ink)]">
                   Three pillars. <br />
-                  <em className="not-italic text-[var(--kf-orange)]">One</em> turnaround.
+                  <span className="text-[var(--kf-orange)]">One</span> performance turnaround.
                 </h2>
               </Reveal>
             </div>
             <div className="lg:col-span-7 lg:pt-6">
               <Reveal delay={0.2}>
                 <p className="text-lg font-light text-[var(--kf-gray)] leading-relaxed">
-                  KiraFix™ is the framework Seema Bassi has refined over 25 years of Fortune 500 transformations. It diagnoses the real performance gap, redesigns the learning operating system, and embeds AI so the gains compound — not evaporate after the rollout.
+                  KiraFix™ is the framework Seema Bassi has refined over 25 years of Fortune 500 performance turnarounds. It diagnoses why a unit is underperforming, rebuilds the learning operating system with AI-based methodologies, and embeds intelligence so the CSAT and eSAT lift compounds — not evaporates.
                 </p>
               </Reveal>
             </div>
           </div>
 
-          <StaggerGroup className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
+          <StaggerGroup className="grid grid-cols-1 md:grid-cols-3 gap-px bg-[var(--kf-line)]">
             {pillars.map((p) => {
               const Icon = p.icon;
               return (
                 <StaggerItem key={p.num}>
-                  <div data-testid={`pillar-${p.num}`} className="relative bg-[var(--kf-bg)] border border-[var(--kf-line)] p-8 md:p-10 h-full overflow-hidden group hover:border-[var(--kf-orange)] transition-colors duration-500">
-                    <div className="absolute -top-6 -right-4 kf-pillar-num pointer-events-none">{p.num}</div>
-                    <Icon size={28} strokeWidth={1.25} className="text-[var(--kf-orange)] relative" />
-                    <h3 className="font-serif text-3xl md:text-4xl font-normal mt-6 relative">{p.title}</h3>
-                    <p className="mt-4 text-[var(--kf-gray)] relative leading-relaxed">{p.body}</p>
+                  <div data-testid={`pillar-${p.num}`} className="relative bg-[var(--kf-bg-card)] p-8 md:p-10 h-full overflow-hidden group hover:bg-[var(--kf-bg-raised)] transition-colors duration-500">
+                    <div className="absolute -top-4 -right-3 kf-pillar-num pointer-events-none">{p.num}</div>
+                    <div className="flex items-center justify-between relative">
+                      <Icon size={26} strokeWidth={1.5} className="text-[var(--kf-orange)]" />
+                      <span className="font-mono-acc text-[10px] tracking-[0.18em] text-[var(--kf-gray-mid)]">{p.code}</span>
+                    </div>
+                    <h3 className="font-serif text-3xl md:text-4xl font-medium mt-8 relative text-[var(--kf-ink)] tracking-[-0.02em]">{p.title}</h3>
+                    <p className="mt-4 text-[var(--kf-gray)] relative leading-relaxed text-sm md:text-base">{p.body}</p>
                   </div>
                 </StaggerItem>
               );
@@ -171,65 +172,67 @@ export default function Home() {
         </div>
       </section>
 
-      {/* FOUNDER SPOTLIGHT */}
+      {/* FOUNDER */}
       <section data-testid="home-founder" className="bg-[var(--kf-bg)]">
         <div className="max-w-7xl mx-auto px-6 md:px-10 py-24 md:py-36 grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
           <div className="lg:col-span-5">
             <Reveal>
-              <div className="kf-img-frame aspect-[4/5] relative">
-                <img src={SEEMA} alt="Seema Bassi — Founder &amp; Chief Learning Officer" />
-                <div className="absolute bottom-5 left-5 bg-[var(--kf-orange)] text-white px-3 py-1 text-[11px] uppercase tracking-[0.18em] font-semibold">
-                  Top 10 CLO &apos;23
+              <div className="kf-img-frame aspect-[4/5] relative kf-img-grayscale">
+                <img src={SEEMA} alt="Seema Bassi" />
+                <div className="absolute top-5 left-5 flex items-center gap-2 bg-[var(--kf-bg)] border border-[var(--kf-ink)] px-3 py-1.5 text-[10px] uppercase tracking-[0.18em] font-mono-acc text-[var(--kf-ink)]">
+                  <span className="kf-dot" /> Top 10 CLO &apos;23
                 </div>
               </div>
             </Reveal>
           </div>
           <div className="lg:col-span-7">
             <Reveal>
-              <p className="kf-overline mb-6">— Meet the Founder</p>
+              <p className="kf-overline mb-6">// FOUNDER</p>
             </Reveal>
             <Reveal delay={0.1}>
-              <h2 className="font-serif font-light text-4xl md:text-6xl leading-[0.98] tracking-tight">
+              <h2 className="font-serif font-medium text-4xl md:text-6xl leading-[0.98] tracking-[-0.03em] text-[var(--kf-ink)]">
                 Seema Bassi
               </h2>
-              <p className="mt-2 text-[var(--kf-gray)] font-mono-acc text-xs tracking-[0.18em] uppercase">Founder &amp; Chief Learning Officer · Hopper Modern</p>
+              <p className="mt-2 text-[var(--kf-gray-mid)] font-mono-acc text-[11px] tracking-[0.18em] uppercase">Founder &amp; Chief Learning Officer · Hopper Modern</p>
             </Reveal>
             <Reveal delay={0.18}>
-              <p className="mt-8 font-serif text-2xl md:text-3xl font-light italic leading-snug text-[var(--kf-ink)]">
-                &ldquo;Business impact from L&amp;D is the No.1 challenge for CEOs globally. KiraFix™ exists to close that gap — permanently.&rdquo;
+              <p className="mt-8 font-serif text-2xl md:text-3xl font-light leading-snug text-[var(--kf-ink)] border-l-2 border-[var(--kf-orange)] pl-6">
+                &ldquo;Performance is the language CEOs speak. KiraFix™ turns underperforming units into high-performing, high-CSAT functions — and keeps them there.&rdquo;
               </p>
             </Reveal>
             <Reveal delay={0.26}>
-              <p className="mt-8 text-[var(--kf-gray)] leading-relaxed text-lg max-w-2xl">
-                Certified Independent Director · 30+ years in L&amp;D · Ex-VP at GE, Aviva &amp; Rio Tinto · DGM HCL (5 cost centers, 100-strong team) · EdTech, SDSU · PMP · IIMB Women Start-up Program · Fractional CLO to organizations who need senior expertise without the headcount.
+              <p className="mt-8 text-[var(--kf-gray)] leading-relaxed text-base max-w-2xl">
+                Certified Independent Director · 30+ years in L&amp;D · Ex-VP at GE, Aviva &amp; Rio Tinto · DGM HCL (5 cost centers, 100-strong team) · EdTech, SDSU · PMP · IIMB Women Start-up · Fractional CLO for organisations needing top-tier learning leadership without the full-time headcount.
               </p>
             </Reveal>
             <Reveal delay={0.34}>
-              <Link to="/about" data-testid="founder-cta-about" className="inline-flex items-center gap-2 mt-8 kf-link text-base font-medium">
-                Read the full story <ArrowUpRight size={16} />
+              <Link to="/about" data-testid="founder-cta-about" className="inline-flex items-center gap-2 mt-8 kf-link font-mono-acc text-xs uppercase tracking-[0.18em]">
+                Read the full story <ArrowUpRight size={14} />
               </Link>
             </Reveal>
           </div>
         </div>
       </section>
 
-      {/* CASE STUDIES PREVIEW */}
-      <section data-testid="home-cases" className="bg-[var(--kf-bg-alt)] kf-grain">
-        <div className="max-w-7xl mx-auto px-6 md:px-10 py-24 md:py-36">
+      {/* CASES PREVIEW */}
+      <section data-testid="home-cases" className="kf-on-dark relative overflow-hidden">
+        <div className="absolute inset-0 kf-grid-bg opacity-100 pointer-events-none" />
+        <div className="absolute -bottom-32 -right-32 w-[500px] h-[500px] rounded-full bg-[var(--kf-orange)] opacity-[0.08] blur-[120px] pointer-events-none" />
+        <div className="relative max-w-7xl mx-auto px-6 md:px-10 py-24 md:py-36">
           <div className="flex flex-col md:flex-row md:items-end justify-between mb-14 gap-6">
             <div>
               <Reveal>
-                <p className="kf-overline mb-5">— Proven transformation</p>
+                <p className="kf-overline mb-5">// PROOF OF PERFORMANCE</p>
               </Reveal>
               <Reveal delay={0.08}>
-                <h2 className="font-serif font-light text-4xl md:text-6xl leading-[0.98] tracking-tight max-w-2xl">
+                <h2 className="font-serif font-medium text-4xl md:text-6xl leading-[0.98] tracking-[-0.03em] text-[var(--kf-ink)] max-w-2xl">
                   Numbers we made move.
                 </h2>
               </Reveal>
             </div>
             <Reveal delay={0.16}>
               <Link to="/case-studies" data-testid="cases-cta-all" className="kf-btn-ghost">
-                All Case Studies <ArrowRight size={16} />
+                All Case Studies <ArrowRight size={14} />
               </Link>
             </Reveal>
           </div>
@@ -237,16 +240,20 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
             {cases.map((c, i) => (
               <Reveal key={c.title} delay={i * 0.08}>
-                <article data-testid={`case-card-${i}`} className="bg-[var(--kf-bg)] border-t-2 border-[var(--kf-orange)] p-8 md:p-10 h-full flex flex-col">
-                  <span className="kf-overline text-[var(--kf-gray)] !text-[var(--kf-gray)]">{c.tag}</span>
-                  <h3 className="font-serif text-3xl md:text-4xl font-normal mt-4 leading-tight">{c.title}</h3>
-                  <p className="mt-4 text-[var(--kf-gray)] leading-relaxed">{c.blurb}</p>
+                <article data-testid={`case-card-${i}`} className="relative bg-[var(--kf-bg-card)] border border-[var(--kf-line)] p-8 md:p-10 h-full flex flex-col group hover:border-[var(--kf-orange)] transition-colors duration-500">
+                  <span className="kf-corner kf-corner-tl opacity-0 group-hover:opacity-100 transition-opacity" />
+                  <span className="kf-corner kf-corner-tr opacity-0 group-hover:opacity-100 transition-opacity" />
+                  <span className="kf-corner kf-corner-bl opacity-0 group-hover:opacity-100 transition-opacity" />
+                  <span className="kf-corner kf-corner-br opacity-0 group-hover:opacity-100 transition-opacity" />
+                  <span className="kf-overline">{c.tag}</span>
+                  <h3 className="font-serif text-2xl md:text-3xl font-medium mt-4 leading-tight text-[var(--kf-ink)] tracking-[-0.02em]">{c.title}</h3>
+                  <p className="mt-4 text-[var(--kf-gray)] leading-relaxed text-sm md:text-base">{c.blurb}</p>
                   <div className="mt-auto pt-8 flex items-end justify-between border-t border-[var(--kf-line)]">
                     <div>
-                      <div className="font-serif font-light text-6xl text-[var(--kf-orange)] leading-none">{c.metric}</div>
-                      <div className="mt-2 text-xs uppercase tracking-[0.2em] text-[var(--kf-gray)]">{c.metricLabel}</div>
+                      <div className="font-serif font-medium text-5xl md:text-6xl text-[var(--kf-orange)] leading-none tracking-[-0.04em]">{c.metric}</div>
+                      <div className="mt-2 text-[10px] font-mono-acc uppercase tracking-[0.18em] text-[var(--kf-gray)]">{c.metricLabel}</div>
                     </div>
-                    <ArrowUpRight size={28} strokeWidth={1.25} className="text-[var(--kf-ink)]" />
+                    <ArrowUpRight size={26} strokeWidth={1.5} className="text-[var(--kf-gray)] group-hover:text-[var(--kf-orange)] transition-colors" />
                   </div>
                 </article>
               </Reveal>

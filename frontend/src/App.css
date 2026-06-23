@@ -4,36 +4,31 @@
     color: var(--kf-ink);
 }
 
-/* Custom marquee styling */
-.kf-logo-strip {
-    border-top: 1px solid var(--kf-line);
-    border-bottom: 1px solid var(--kf-line);
-}
-
 .kf-logo-strip-item {
     display: inline-flex;
     align-items: center;
-    gap: 12px;
-    padding: 0 48px;
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 1.75rem;
-    font-weight: 400;
-    color: var(--kf-gray);
-    letter-spacing: 0.02em;
+    gap: 14px;
+    padding: 0 40px;
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: var(--kf-ink);
+    letter-spacing: 0.06em;
     white-space: nowrap;
+    text-transform: uppercase;
 }
 
 .kf-logo-strip-dot {
-    width: 6px;
-    height: 6px;
-    background: var(--kf-orange);
+    width: 5px;
+    height: 5px;
+    background: var(--kf-ink);
     border-radius: 999px;
 }
 
-/* Hover reveal for images */
 .kf-img-frame {
     overflow: hidden;
-    background: var(--kf-bg-alt);
+    background: var(--kf-bg-card);
+    border: 1px solid var(--kf-line);
 }
 .kf-img-frame img {
     transition: transform 0.7s cubic-bezier(0.16,1,0.3,1), filter 0.5s ease;
@@ -44,26 +39,39 @@
 .kf-img-frame:hover img {
     transform: scale(1.04);
 }
-.kf-img-grayscale img {
-    filter: grayscale(100%);
+.kf-img-frame.kf-img-grayscale img {
+    filter: grayscale(60%) brightness(0.96);
 }
-.kf-img-grayscale:hover img {
-    filter: grayscale(0%);
+.kf-img-frame.kf-img-grayscale:hover img {
+    filter: grayscale(0%) brightness(1);
 }
 
-/* Drop cap */
 .kf-dropcap::first-letter {
-    font-family: 'Cormorant Garamond', serif;
+    font-family: 'Space Grotesk', sans-serif;
     float: left;
-    font-size: 5.25rem;
+    font-size: 5rem;
     line-height: 0.85;
-    padding-right: 12px;
+    padding-right: 14px;
     padding-top: 6px;
     color: var(--kf-orange);
     font-weight: 500;
 }
 
-/* Custom cursor — orange dot for buttons (subtle) */
 button, a {
     cursor: pointer;
 }
+
+.kf-corner {
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    border-color: var(--kf-ink);
+    pointer-events: none;
+}
+.kf-on-dark .kf-corner {
+    border-color: var(--kf-orange);
+}
+.kf-corner-tl { top: -1px; left: -1px; border-top: 1px solid; border-left: 1px solid; }
+.kf-corner-tr { top: -1px; right: -1px; border-top: 1px solid; border-right: 1px solid; }
+.kf-corner-bl { bottom: -1px; left: -1px; border-bottom: 1px solid; border-left: 1px solid; }
+.kf-corner-br { bottom: -1px; right: -1px; border-bottom: 1px solid; border-right: 1px solid; }

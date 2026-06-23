@@ -18,7 +18,7 @@ export default function CredibilityMarquee() {
   return (
     <section
       data-testid="credibility-marquee"
-      className="kf-logo-strip bg-[var(--kf-bg)] py-7 kf-marquee-mask"
+      className="bg-[var(--kf-bg-raised)] py-6 kf-marquee-mask border-y border-[var(--kf-line-strong)] kf-on-dark"
     >
       <Marquee speed={36} gradient={false} pauseOnHover>
         {items.map((it, i) => (
