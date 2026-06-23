@@ -66,6 +66,21 @@ export default function Home() {
         <div className="absolute inset-0 kf-grid-bg opacity-100 pointer-events-none" />
 
         <div className="relative max-w-7xl mx-auto px-6 md:px-10 pt-32 md:pt-44 pb-24 md:pb-36">
+          <Reveal>
+            <div className="flex items-center gap-4 mb-12">
+              <img
+                src="https://customer-assets.emergentagent.com/job_enterprise-boost-ai/artifacts/xplppvud_newlogo.jpg"
+                alt="Hopper Modern — Biz Learning Solutions"
+                data-testid="hero-hopper-logo"
+                className="w-16 h-16 md:w-20 md:h-20 object-cover rounded-md border border-[var(--kf-ink)] shadow-[0_8px_24px_-12px_rgba(20,16,16,0.5)]"
+              />
+              <div className="leading-tight">
+                <p className="font-mono-acc text-[10px] uppercase tracking-[0.22em] text-[var(--kf-gray)]">// PRESENTED BY</p>
+                <p className="font-serif text-xl md:text-2xl font-medium text-[var(--kf-ink)] tracking-[-0.02em] mt-1">Hopper Modern Innovative Learning Solutions</p>
+              </div>
+            </div>
+          </Reveal>
+
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-end">
             <div className="lg:col-span-9">
               <Reveal>
