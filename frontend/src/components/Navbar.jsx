@@ -39,10 +39,6 @@ export default function Navbar() {
             <span className="absolute top-0 left-0 w-1.5 h-1.5 bg-[var(--kf-ink)]" />
             KF
           </div>
-          <div className="leading-tight">
-            <div className="font-serif text-[18px] tracking-tight text-[var(--kf-ink)] font-medium">KiraFix <span className="text-[var(--kf-ink)] opacity-50">AI</span><sup className="text-[9px] ml-0.5">™</sup></div>
-            <div className="text-[9px] font-mono-acc tracking-[0.22em] uppercase text-[var(--kf-gray)]">by Hopper Modern</div>
-          </div>
         </Link>
 
         <nav className="hidden lg:flex items-center gap-8">
