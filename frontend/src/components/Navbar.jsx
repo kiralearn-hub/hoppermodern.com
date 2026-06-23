@@ -33,15 +33,16 @@ export default function Navbar() {
         scrolled ? "backdrop-blur-xl bg-[rgba(255,87,34,0.88)] border-b border-[var(--kf-line)]" : "bg-transparent"
       }`}
     >
-      <div className="max-w-7xl mx-auto px-6 md:px-10 flex items-center justify-between h-[96px]">
-        <Link to="/" data-testid="nav-brand" className="flex items-center gap-4 group">
+      <div className="max-w-7xl mx-auto px-6 md:px-10 flex items-center justify-between h-[160px]">
+        <Link to="/" data-testid="nav-brand" className="flex items-center gap-5 group">
           <img
             src="https://customer-assets.emergentagent.com/job_enterprise-boost-ai/artifacts/xplppvud_newlogo.jpg"
             alt="Hopper Modern AI Performance Solutions"
-            className="w-16 h-16 md:w-20 md:h-20 object-cover rounded-md border border-[var(--kf-ink)] shadow-[0_6px_20px_-8px_rgba(20,16,16,0.45)]"
+            className="w-32 h-32 md:w-36 md:h-36 object-cover rounded-lg border border-[var(--kf-ink)] shadow-[0_10px_28px_-10px_rgba(20,16,16,0.5)]"
           />
-          <div className="leading-tight hidden md:block">
-            <div className="font-serif text-[15px] md:text-[17px] tracking-[-0.02em] text-[var(--kf-ink)] font-semibold max-w-[260px] leading-tight">Hopper Modern AI Performance Solutions</div>
+          <div className="leading-[1.05] hidden md:block">
+            <div className="font-serif text-3xl md:text-4xl tracking-[-0.025em] text-[var(--kf-ink)] font-semibold max-w-[360px]">Hopper Modern</div>
+            <div className="font-serif text-lg md:text-xl tracking-[-0.015em] text-[var(--kf-ink)] font-medium opacity-80 mt-0.5">AI Performance Solutions</div>
           </div>
         </Link>
 
