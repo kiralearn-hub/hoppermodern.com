@@ -38,7 +38,7 @@ const stats = [
   { value: "30+", label: "Years global L&D leadership" },
   { value: "25+", label: "Fortune 500 transformations" },
   { value: "Top 10", label: "CLO of 2023" },
-  { value: "5×", label: "Cost centers scaled at HCL" },
+  { value: "100", label: "Professionals led across cost centers" },
 ];
 
 const cases = [
@@ -81,7 +81,7 @@ export default function Home() {
               </Reveal>
               <Reveal delay={0.18}>
                 <p className="mt-10 text-lg md:text-xl font-light leading-relaxed text-[var(--kf-gray)] max-w-2xl">
-                  KiraFix™ is the Performance Turnaround framework. We make your underperforming business units perform — measured in CSAT, eSAT, productivity and ROI — using Innovation, Modern Learning and AI as the levers. Engineered over three decades inside GE, Aviva, Rio Tinto and HCL.
+                  KiraFix™ is the Performance Turnaround framework. We make your underperforming business units perform — measured in CSAT, eSAT, productivity and ROI — using Innovation, Modern Learning and AI as the levers. Engineered over three decades inside GE, Aviva and Rio Tinto.
                 </p>
               </Reveal>
               <Reveal delay={0.28}>
@@ -208,7 +208,7 @@ export default function Home() {
             </Reveal>
             <Reveal delay={0.26}>
               <p className="mt-8 text-[var(--kf-gray)] leading-relaxed text-base max-w-2xl">
-                Certified Independent Director · 30+ years in L&amp;D · Ex-VP at GE, Aviva &amp; Rio Tinto · DGM HCL (5 cost centers, 100-strong team) · EdTech, SDSU · PMP · IIMB Women Start-up · Fractional CLO for organisations needing top-tier learning leadership without the full-time headcount.
+                Certified Independent Director · 30+ years in L&amp;D · Ex-VP at GE, Aviva &amp; Rio Tinto · Managed teams of up to 100 professionals · EdTech, SDSU · PMP · IIMB Women Start-up · Fractional CLO for organisations needing top-tier learning leadership without the full-time headcount.
               </p>
             </Reveal>
             <Reveal delay={0.34}>

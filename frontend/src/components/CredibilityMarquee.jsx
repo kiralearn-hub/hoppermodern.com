@@ -5,7 +5,7 @@ const items = [
   "GE",
   "Aviva",
   "Rio Tinto",
-  "HCL",
+  "Aegis BPO",
   "Fortune 500 BFSI",
   "Fortune 500 BPO",
   "Telecom Leaders",

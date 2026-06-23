@@ -13,10 +13,8 @@ const timeline = [
   { year: "Aegis BPO", title: "VP — Training", body: "Held VP of Training, scaling learning operations across BPO delivery centers." },
   { year: "Rio Tinto", title: "APAC Learning Advisor", body: "Served as Learning Advisor across the APAC region for the global mining and metals leader." },
   { year: "GE Capital · Genpact", title: "Learning Leader", body: "Drove the Learning function inside GE Capital (Genpact), accelerating the move to scalable eLearning." },
-  { year: "HCL", title: "DGM — 5 cost centers, team of 100", body: "Managed training for 5 cost centers and a team of 100 professionals. Successfully led the shift from Instructor-Led Training to eLearning at enterprise scale." },
-  { year: "2020", title: "Founded Hopper Modern", body: "Launched Hopper Modern AI Performance Solutions as a Fractional CLO firm for organizations needing senior expertise without full-time headcount." },
+  { year: "2020", title: "Launched Hopper Modern AI Performance Solutions", body: "Founded the firm as a Fractional CLO practice for organizations needing senior expertise without full-time headcount." },
   { year: "2023", title: "Top 10 CLO of the Year", body: "Recognised by CEO Insights for measurable enterprise performance turnarounds." },
-  { year: "2024+", title: "KiraFix™ launched", body: "Trademarked the Performance Turnaround framework — making underperforming business units perform via Innovation, Modern Learning and AI." },
 ];
 
 const trackRecord = [
@@ -30,7 +28,7 @@ const trackRecord = [
   },
   {
     label: "Operational Scale",
-    body: "As DGM at HCL, managed training for 5 cost centers and a team of 100 professionals.",
+    body: "Held P&L responsibility and managed teams of up to 100 professionals across multiple cost centers.",
   },
   {
     label: "Innovation",
@@ -45,7 +43,7 @@ const howIHelp = [
   },
   {
     label: "Scalable Content Strategy",
-    body: "Moving from Instructor-Led Training to eLearning / GenAI-driven models — a shift I successfully led at HCL and GE.",
+    body: "Moving from Instructor-Led Training to eLearning / GenAI-driven models — a shift I successfully led inside Fortune 500 enterprises.",
   },
   {
     label: "Performance Consulting",
@@ -117,7 +115,7 @@ export default function About() {
           </Reveal>
           <Reveal delay={0.16}>
             <p className="kf-dropcap font-serif text-xl md:text-2xl leading-relaxed text-[var(--kf-ink-soft)]">
-              With 30 years of experience transforming workforce capability as a function head and business leader, I bridge the gap between Learning and Organizational Performance. Having held P&amp;L responsibility and managed teams of up to 100 professionals, I understand that Learning &amp; Development is not a cost center — it is a competitive advantage.
+              My name is Seema Bassi. With 30 years of experience transforming workforce capability as a function head and business leader, I bridge the gap between Learning and Organizational Performance. Having held P&amp;L responsibility and managed teams of up to 100 professionals, I understand that Learning &amp; Development is not a cost center — it is a competitive advantage.
             </p>
           </Reveal>
           <Reveal delay={0.22}>

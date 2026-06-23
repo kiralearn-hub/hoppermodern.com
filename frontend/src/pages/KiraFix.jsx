@@ -42,7 +42,7 @@ const services = [
   },
   {
     title: "AI-Based Modern Learning",
-    body: "Move from instructor-led training to GenAI-personalised journeys, intelligent tutoring, business simulations and game-based learning. The shift Seema led at HCL and GE — adapted to your stack.",
+    body: "Move from instructor-led training to GenAI-personalised journeys, intelligent tutoring, business simulations and game-based learning. The shift Seema has led inside Fortune 500 enterprises — adapted to your stack.",
   },
   {
     title: "Performance Consulting",
