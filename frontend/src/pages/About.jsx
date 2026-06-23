@@ -32,7 +32,7 @@ const trackRecord = [
   },
   {
     label: "Innovation",
-    body: "Certified in EdTech (SDSU) and PMP, currently integrating GenAI into instructional design for modern workforces.",
+    body: "Certified in EdTech (SDSU) and PMP. Architecting AI-led performance turnaround frameworks for modern enterprises.",
   },
 ];
 
@@ -120,7 +120,7 @@ export default function About() {
           </Reveal>
           <Reveal delay={0.22}>
             <p className="mt-8 text-base md:text-lg leading-relaxed text-[var(--kf-gray)]">
-              I am a <span className="text-[var(--kf-ink)] font-semibold">Learning Leader &amp; Organizational Strategist</span> who has scaled functions for Fortune 500 giants and navigated complex global markets — APAC, US and Europe. My background combines the agility of a Founder with the operational discipline of a corporate veteran.
+              I am Seema Bassi — <span className="text-[var(--kf-ink)] font-semibold">Founder of Hopper Modern AI Performance Solutions</span> — a Learning Leader and Organizational Strategist who has scaled functions for Fortune 500 giants and navigated complex global markets across APAC, US and Europe. My background combines the agility of a Founder with the operational discipline of a corporate veteran.
             </p>
           </Reveal>
           <Reveal delay={0.3}>
@@ -178,14 +178,14 @@ export default function About() {
               </Reveal>
               <Reveal delay={0.08}>
                 <h2 className="font-serif font-medium text-4xl md:text-6xl leading-[0.98] tracking-[-0.03em] text-[var(--kf-ink)]">
-                  Advisory · eLearning · AI programs.
+                  Performance improvement, end-to-end.
                 </h2>
               </Reveal>
             </div>
             <div className="lg:col-span-7 lg:pt-6">
               <Reveal delay={0.16}>
                 <p className="text-lg font-light text-[var(--kf-gray)] leading-relaxed">
-                  Through Hopper Modern AI Performance Solutions, I act as a <em>&ldquo;Fractional CLO&rdquo;</em> for organizations that need high-level expertise without the full-time headcount. I specialize in:
+                  Hopper Modern AI Performance Solutions is a <span className="text-[var(--kf-ink)] font-semibold">performance improvement firm</span> — not a consultancy. We embed inside underperforming business units and stay accountable for the numbers. As a Fractional CLO, I bring senior-level expertise without the full-time headcount and specialize in:
                 </p>
               </Reveal>
             </div>
