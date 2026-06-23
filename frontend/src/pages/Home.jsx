@@ -76,9 +76,7 @@ export default function Home() {
               </Reveal>
               <Reveal delay={0.06}>
                 <h1 className="font-serif font-medium text-5xl sm:text-6xl md:text-7xl lg:text-[6.5rem] leading-[0.95] tracking-[-0.035em] text-[var(--kf-ink)]">
-                  Making <span className="text-[var(--kf-ink)] opacity-50">underperforming</span> business units
-                  <br />
-                  perform. Measured in CSAT, eSAT &amp; <span className="italic">ROI.</span>
+                  Making <span className="text-[var(--kf-ink)] opacity-50">underperforming</span> business units <span className="italic">perform.</span>
                 </h1>
               </Reveal>
               <Reveal delay={0.18}>
