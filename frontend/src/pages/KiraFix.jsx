@@ -38,7 +38,7 @@ const services = [
   },
   {
     title: "Performance Turnaround",
-    body: "End-to-end KiraFix AI™ engagement for underperforming units. Diagnose. Redesign. Deploy AI-based learning. Cascade accountability. Measure performance lift quarter-on-quarter.",
+    body: "End-to-end KiraFix™ engagement for underperforming units. Diagnose. Redesign. Deploy AI-based learning. Cascade accountability. Measure performance lift quarter-on-quarter.",
   },
   {
     title: "AI-Based Modern Learning",
@@ -103,13 +103,13 @@ export default function KiraFix() {
       <section data-testid="kirafix-hero" className="relative overflow-hidden bg-[var(--kf-bg)]">
         <div className="absolute inset-0 kf-grid-bg opacity-100 pointer-events-none" />
 
-        <div className="relative max-w-7xl mx-auto px-6 md:px-10 pt-32 md:pt-40 pb-20 md:pb-28">
+        <div className="relative max-w-7xl mx-auto px-6 md:px-10 pt-16 md:pt-24 pb-20 md:pb-28">
           <Reveal>
             <p className="kf-overline mb-8 flex items-center gap-3"><span className="kf-dot" />THE METHODOLOGY</p>
           </Reveal>
           <Reveal delay={0.08}>
             <h1 className="font-serif font-medium text-5xl md:text-7xl lg:text-[7.5rem] leading-[0.95] tracking-[-0.035em] max-w-5xl text-[var(--kf-ink)]">
-              KiraFix <span className="text-[var(--kf-ink)] opacity-40">AI</span><sup className="text-2xl md:text-4xl ml-1">™</sup>
+              KiraFix<sup className="text-2xl md:text-4xl ml-1">™</sup>
               <br />
               <span className="text-[var(--kf-gray)]">Innovation.</span> Modern Learning. <span className="italic">AI.</span>
             </h1>
@@ -141,7 +141,7 @@ export default function KiraFix() {
             <div className="lg:col-span-7 lg:pt-6">
               <Reveal delay={0.18}>
                 <p className="text-lg font-light text-[var(--kf-gray)] leading-relaxed">
-                  Most consulting engagements end at deployment. KiraFix AI™ doesn&apos;t. We measure the business unit&apos;s performance lift, hand it over running self-sufficiently, and stay accountable for the CSAT, eSAT and productivity numbers long after the kick-off slide deck has gone cold.
+                  Most consulting engagements end at deployment. KiraFix™ doesn&apos;t. We measure the business unit&apos;s performance lift, hand it over running self-sufficiently, and stay accountable for the CSAT, eSAT and productivity numbers long after the kick-off slide deck has gone cold.
                 </p>
               </Reveal>
             </div>
@@ -189,7 +189,7 @@ export default function KiraFix() {
             <div className="lg:col-span-7 lg:pt-6">
               <Reveal delay={0.18}>
                 <p className="text-lg font-light text-[var(--kf-gray)] leading-relaxed">
-                  Pick what you need. We can run the full KiraFix AI™ Performance Turnaround, or plug into a single capability where the gap is most acute. Every engagement is led personally by Seema and her senior L&amp;D bench.
+                  Pick what you need. We can run the full KiraFix™ Performance Turnaround, or plug into a single capability where the gap is most acute. Every engagement is led personally by Seema and her senior L&amp;D bench.
                 </p>
               </Reveal>
             </div>

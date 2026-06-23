@@ -65,28 +65,13 @@ export default function Home() {
       <section data-testid="home-hero" className="relative overflow-hidden bg-[var(--kf-bg)]">
         <div className="absolute inset-0 kf-grid-bg opacity-100 pointer-events-none" />
 
-        <div className="relative max-w-7xl mx-auto px-6 md:px-10 pt-32 md:pt-44 pb-24 md:pb-36">
-          <Reveal>
-            <div className="flex items-center gap-6 md:gap-8 mb-14">
-              <img
-                src="https://customer-assets.emergentagent.com/job_enterprise-boost-ai/artifacts/xplppvud_newlogo.jpg"
-                alt="Hopper Modern — Biz Learning Solutions"
-                data-testid="hero-hopper-logo"
-                className="w-32 h-32 md:w-44 md:h-44 object-cover rounded-lg border border-[var(--kf-ink)] shadow-[0_16px_40px_-12px_rgba(20,16,16,0.45)]"
-              />
-              <div className="leading-tight">
-                <p className="font-mono-acc text-[11px] uppercase tracking-[0.22em] text-[var(--kf-ink)] opacity-70">// PRESENTED BY</p>
-                <p className="font-serif text-2xl md:text-4xl font-medium text-[var(--kf-ink)] tracking-[-0.025em] mt-2 max-w-xl leading-[1.05]">Hopper Modern Innovative Learning Solutions</p>
-              </div>
-            </div>
-          </Reveal>
-
+        <div className="relative max-w-7xl mx-auto px-6 md:px-10 pt-16 md:pt-24 pb-24 md:pb-36">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-end">
             <div className="lg:col-span-9">
               <Reveal>
                 <p className="kf-overline mb-8 flex items-center gap-3">
                   <span className="kf-dot" />
-                  KIRAFIX AI™ // BUSINESS UNIT PERFORMANCE TURNAROUND
+                  KIRAFIX™ // BUSINESS UNIT PERFORMANCE TURNAROUND
                 </p>
               </Reveal>
               <Reveal delay={0.06}>
@@ -98,7 +83,7 @@ export default function Home() {
               </Reveal>
               <Reveal delay={0.18}>
                 <p className="mt-10 text-lg md:text-xl font-light leading-relaxed text-[var(--kf-gray)] max-w-2xl">
-                  KiraFix AI™ is the Performance Turnaround framework. We make your underperforming business units perform — measured in CSAT, eSAT, productivity and ROI — using Innovation, Modern Learning and AI as the levers. Engineered over three decades inside GE, Aviva, Rio Tinto and HCL.
+                  KiraFix™ is the Performance Turnaround framework. We make your underperforming business units perform — measured in CSAT, eSAT, productivity and ROI — using Innovation, Modern Learning and AI as the levers. Engineered over three decades inside GE, Aviva, Rio Tinto and HCL.
                 </p>
               </Reveal>
               <Reveal delay={0.28}>
@@ -107,7 +92,7 @@ export default function Home() {
                     Book a Discovery Call <ArrowUpRight size={14} />
                   </Link>
                   <Link to="/kirafix" data-testid="hero-cta-secondary" className="kf-btn-ghost">
-                    The KiraFix AI™ Model <ArrowRight size={14} />
+                    The KiraFix™ Model <ArrowRight size={14} />
                   </Link>
                 </div>
               </Reveal>
@@ -156,7 +141,7 @@ export default function Home() {
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 mb-16">
             <div className="lg:col-span-5">
               <Reveal>
-                <p className="kf-overline mb-6">// THE KIRAFIX AI™ FRAMEWORK</p>
+                <p className="kf-overline mb-6">// THE KIRAFIX™ FRAMEWORK</p>
               </Reveal>
               <Reveal delay={0.1}>
                 <h2 className="font-serif font-medium text-4xl md:text-6xl leading-[0.98] tracking-[-0.03em] text-[var(--kf-ink)]">
@@ -168,7 +153,7 @@ export default function Home() {
             <div className="lg:col-span-7 lg:pt-6">
               <Reveal delay={0.2}>
                 <p className="text-lg font-light text-[var(--kf-gray)] leading-relaxed">
-                  KiraFix AI™ is the framework Seema Bassi has refined over 25 years of Fortune 500 performance turnarounds. It diagnoses why a business unit is underperforming, rebuilds the way it operates with AI-based methodologies, and embeds intelligence so the CSAT, eSAT and productivity lift compounds — not evaporates.
+                  KiraFix™ is the framework Seema Bassi has refined over 25 years of Fortune 500 performance turnarounds. It diagnoses why a business unit is underperforming, rebuilds the way it operates with AI-based methodologies, and embeds intelligence so the CSAT, eSAT and productivity lift compounds — not evaporates.
                 </p>
               </Reveal>
             </div>
@@ -220,7 +205,7 @@ export default function Home() {
             </Reveal>
             <Reveal delay={0.18}>
               <p className="mt-8 font-serif text-2xl md:text-3xl font-light leading-snug text-[var(--kf-ink)] border-l-2 border-[var(--kf-ink)] pl-6">
-                &ldquo;Performance is the language CEOs speak. KiraFix AI™ makes underperforming business units perform — measured in CSAT, eSAT and the numbers on the P&amp;L.&rdquo;
+                &ldquo;Performance is the language CEOs speak. KiraFix™ makes underperforming business units perform — measured in CSAT, eSAT and the numbers on the P&amp;L.&rdquo;
               </p>
             </Reveal>
             <Reveal delay={0.26}>

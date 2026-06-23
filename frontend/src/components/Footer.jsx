@@ -43,10 +43,10 @@ export default function Footer() {
           <div>
             <p className="kf-overline mb-2">// PARENT BRAND</p>
             <p className="font-serif text-2xl md:text-3xl font-medium leading-tight tracking-[-0.02em]">
-              Hopper Modern Innovative Learning Solutions
+              Hopper Modern AI Performance Solutions
             </p>
             <p className="font-mono-acc text-[11px] tracking-[0.16em] uppercase text-[var(--kf-gray)] mt-2">
-              KiraFix AI™ is a flagship framework from Hopper Modern.
+              KiraFix™ is a flagship framework from Hopper Modern.
             </p>
           </div>
         </div>
@@ -99,7 +99,7 @@ export default function Footer() {
             <ul className="space-y-3 text-[var(--kf-ink-soft)] text-sm">
               <li><Link to="/" className="hover:text-[var(--kf-orange)]" data-testid="footer-link-home">Home</Link></li>
               <li><Link to="/about" className="hover:text-[var(--kf-orange)]" data-testid="footer-link-about">About Seema</Link></li>
-              <li><Link to="/kirafix" className="hover:text-[var(--kf-orange)]" data-testid="footer-link-kirafix">KiraFix AI™ Model</Link></li>
+              <li><Link to="/kirafix" className="hover:text-[var(--kf-orange)]" data-testid="footer-link-kirafix">KiraFix™ Model</Link></li>
               <li><Link to="/case-studies" className="hover:text-[var(--kf-orange)]" data-testid="footer-link-cases">Case Studies</Link></li>
               <li><Link to="/contact" className="hover:text-[var(--kf-orange)]" data-testid="footer-link-contact">Contact</Link></li>
             </ul>
@@ -148,7 +148,7 @@ export default function Footer() {
         </div>
 
         <div className="pt-10 border-t border-[var(--kf-line)] flex flex-col md:flex-row justify-between items-start md:items-center gap-4 text-[10px] text-[var(--kf-gray-mid)] font-mono-acc tracking-wider uppercase">
-          <span>© {new Date().getFullYear()} Hopper Modern Innovative Learning Solutions. KiraFix AI™ is a trademark.</span>
+          <span>© {new Date().getFullYear()} Hopper Modern AI Performance Solutions. KiraFix™ is a trademark.</span>
           <span>Gurgaon · India · Engagements Delivered Globally</span>
         </div>
       </div>

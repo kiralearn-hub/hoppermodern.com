@@ -50,7 +50,7 @@ export default function Contact() {
       <section data-testid="contact-hero" className="relative overflow-hidden bg-[var(--kf-bg)]">
         <div className="absolute inset-0 kf-grid-bg opacity-100 pointer-events-none" />
 
-        <div className="relative max-w-7xl mx-auto px-6 md:px-10 pt-32 md:pt-40 pb-20 md:pb-28 grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16">
+        <div className="relative max-w-7xl mx-auto px-6 md:px-10 pt-16 md:pt-24 pb-20 md:pb-28 grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16">
           <div className="lg:col-span-5">
             <Reveal>
               <p className="kf-overline mb-8 flex items-center gap-3"><span className="kf-dot" />LET&apos;S TALK</p>

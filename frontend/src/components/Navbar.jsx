@@ -5,7 +5,7 @@ import { Menu, X, ArrowUpRight } from "lucide-react";
 const links = [
   { to: "/", label: "Home" },
   { to: "/about", label: "About" },
-  { to: "/kirafix", label: "KiraFix AI" },
+  { to: "/kirafix", label: "KiraFix" },
   { to: "/case-studies", label: "Case Studies" },
   { to: "/contact", label: "Contact" },
 ];
@@ -33,9 +33,16 @@ export default function Navbar() {
         scrolled ? "backdrop-blur-xl bg-[rgba(255,87,34,0.88)] border-b border-[var(--kf-line)]" : "bg-transparent"
       }`}
     >
-      <div className="max-w-7xl mx-auto px-6 md:px-10 flex items-center justify-between h-[68px]">
-        <Link to="/" data-testid="nav-brand" className="flex items-center gap-3 group">
-          <span className="sr-only">Home</span>
+      <div className="max-w-7xl mx-auto px-6 md:px-10 flex items-center justify-between h-[96px]">
+        <Link to="/" data-testid="nav-brand" className="flex items-center gap-4 group">
+          <img
+            src="https://customer-assets.emergentagent.com/job_enterprise-boost-ai/artifacts/xplppvud_newlogo.jpg"
+            alt="Hopper Modern AI Performance Solutions"
+            className="w-16 h-16 md:w-20 md:h-20 object-cover rounded-md border border-[var(--kf-ink)] shadow-[0_6px_20px_-8px_rgba(20,16,16,0.45)]"
+          />
+          <div className="leading-tight hidden md:block">
+            <div className="font-serif text-[15px] md:text-[17px] tracking-[-0.02em] text-[var(--kf-ink)] font-semibold max-w-[260px] leading-tight">Hopper Modern AI Performance Solutions</div>
+          </div>
         </Link>
 
         <nav className="hidden lg:flex items-center gap-8">
